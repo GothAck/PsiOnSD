@@ -1,0 +1,8 @@
+**********************
+* Autodesk EAGLE - SPICE Model File
+**********************
+.SUBCKT CMP512 A D
+abridge [A] [D] adc_buff
+.model adc_buff adc_bridge(in_low = 0.512 in_high = 0.512)
+
+.ENDS CMP512

@@ -1,0 +1,7 @@
+**********************
+* Autodesk EAGLE - SPICE Model File
+**********************
+.SUBCKT CMP1024 A D
+abridge [A] [D] adc_buff
+.model adc_buff adc_bridge(in_low = 1.024 in_high = 1.024)
+.ENDS CMP1024

@@ -1,0 +1,5 @@
+*
+.SUBCKT SDIOD 1 2
+D 1 2 DMOD
+.model DMOD D (bv=20)
+.ENDS SDIOD

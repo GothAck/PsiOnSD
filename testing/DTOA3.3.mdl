@@ -1,0 +1,7 @@
+**********************
+* Autodesk EAGLE - SPICE Model File
+**********************
+.SUBCKT DTOAB D A
+abridge [D] [A] dac_buff
+.model dac_buff dac_bridge(out_low = 0.3 out_high = 3.3)
+.ENDS DTOAB

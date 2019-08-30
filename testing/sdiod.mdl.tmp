@@ -1,0 +1,8 @@
+**********************
+* Autodesk EAGLE - SPICE Model File
+* Author:
+* Date: 
+**********************
+.SUBCKT sdiod N1 N2
+DIODE N1 N2 IODE
+.ENDS sdiod

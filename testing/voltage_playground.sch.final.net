@@ -1,0 +1,196 @@
+* SpiceNetList
+* 
+* Exported from voltage_playground.sch at 8/27/19 11:58 PM
+* 
+* EAGLE Version 9.4.2 Copyright (c) 1988-2019 Autodesk, Inc.
+* 
+.TEMP=25.0
+
+* --------- .OPTIONS ---------
+.OPTIONS ABSTOL=1e-12 GMIN=1e-12 PIVREL=1e-3 ITL1=100 ITL2=50 PIVTOL=1e-13 RELTOL=1e-3 VNTOL=1e-6 CHGTOL=1e-15 ITL4=10 METHOD=GEAR SRCSTEPS=0 TRTOL=7 NODE
+
+* --------- .PARAMS ---------
+
+* --------- devices ---------
+D_D17 N_8 N_22 DMOD 
+D_D24 N_34 N_35 DMOD 
+D_D6 N_12 N_10 DMOD 
+X_X2 N_27 N_38 INV 
+D_D8 N_13 N_12 DMOD 
+R_R5 P_VOUT N_29 800 
+C_C3 P_P2 N_2 10uf 
+D_D13 N_6 N_7 DMOD 
+R_R3 N_FB P_VREF 162k 
+D_D21 N_30 N_31 DMOD 
+X_X8 N_FB N_28 CMP512 
+D_D16 N_17 N_16 DMOD 
+D_D23 N_31 N_32 DMOD 
+D_D25 N_32 N_33 DMOD 
+C_C19 P_P2 N_30 10uf 
+C_C20 N_P2 N_36 10uf 
+D_D4 N_10 N_9 DMOD 
+D_D22 N_35 N_36 DMOD 
+D_D10 N_14 N_13 DMOD 
+V_VCUR_2 N_37 0 
+D_D1 +3V3 N_1 DMOD 
+D_D7 N_3 N_4 DMOD 
+V_V2 +3V3 0 DC 3.3v AC 0 
+R_R1 P_VOUT P_FB 6300k 
+V_V1 N_20 0 DC 3.3V AC 0 PULSE(0 3.3V 0.1ms 0 0 0.0061ms 0.0121ms) 
+D_D5 N_2 N_3 DMOD 
+X_X9 N_25 P_P1 DTOA33 
+C_C23 P_P2 N_32 10uf 
+C_C11 P_P2 N_6 10uf 
+R_R4 N_VOUT N_FB 6300k 
+C_C22 N_P1 N_35 10uf 
+X_X7 N_28 N_21 N_24 AND2 
+D_D19 N_22 N_30 DMOD 
+X_X12 N_24 N_P2 DTOA33 
+D_D28 N_VOUT N_19 DMOD 
+C_C24 N_P2 N_34 10uf 
+C_C2 N_P1 N_9 10uf 
+C_C7 P_P2 N_4 10uf 
+C_C21 P_P1 N_31 10uf 
+X_X6 N_24 N_26 INV 
+V_VCUR_1 N_29 0 
+X_X1 N_23 N_25 INV 
+D_D18 N_18 N_17 DMOD 
+C_C28 0 N_VOUT 22uf 
+C_C4 N_P2 N_10 10uf 
+C_C5 P_P1 N_3 10uf 
+C_C8 N_P2 N_13 10uf 
+C_C17 P_P1 N_22 10uf 
+X_X5 P_FB N_27 CMP1024 
+X_X10 N_23 P_P2 DTOA33 
+C_C18 N_P1 N_18 10uf 
+C_C16 N_P2 N_17 10uf 
+D_D11 N_5 N_6 DMOD 
+D_D14 N_16 N_15 DMOD 
+D_D2 N_9 0 DMOD 
+C_C6 N_P1 N_12 10uf 
+D_D3 N_1 N_2 DMOD 
+C_C25 P_P1 N_33 10uf 
+X_X11 N_26 N_P1 DTOA33 
+V_V3 P_VREF 0 1.024V 
+C_C12 N_P2 N_15 10uf 
+C_C14 N_P1 N_16 10uf 
+R_R6 N_37 N_VOUT 800 
+C_C15 P_P2 N_8 10uf 
+C_C13 P_P1 N_7 10uf 
+X_X4 N_20 N_21 SINEADC 
+C_C10 N_P1 N_14 10uf 
+D_D12 N_15 N_14 DMOD 
+D_D15 N_7 N_8 DMOD 
+R_R2 P_FB 0 300k 
+D_D26 N_19 N_34 DMOD 
+C_C9 P_P1 N_5 10uf 
+D_D27 N_33 P_VOUT DMOD 
+C_C27 0 P_VOUT 22uf 
+D_D9 N_4 N_5 DMOD 
+D_D20 N_36 N_18 DMOD 
+C_C1 P_P1 N_1 10uf 
+C_C26 N_P1 N_19 10uf 
+X_X3 N_38 N_21 N_23 AND2 
+
+X_D1 N_38 DIG_N_38 DTOAB1
+* --------- models ---------
+
+* model file: /home/gothack/EAGLE/projects/Psionpi/DMOD.mdl
+**********************
+* Autodesk EAGLE - Spice Model File
+* Date: 9/17/17
+* basic diode intrinsic model
+**********************
+.MODEL DMOD D
+
+
+* model file: /home/gothack/EAGLE/projects/Psionpi/DTOA33.mdl
+**********************
+* Autodesk EAGLE - SPICE Model File
+**********************
+.SUBCKT DTOA33 D A
+abridge [D] [A] dac_buff
+.model dac_buff dac_bridge(out_low = 0.3 out_high = 3.3)
+.ENDS DTOA33
+
+
+* model file: /home/gothack/EAGLE/projects/Psionpi/CMP1024.mdl
+**********************
+* Autodesk EAGLE - SPICE Model File
+**********************
+.SUBCKT CMP1024 A D
+abridge [A] [D] adc_buff
+.model adc_buff adc_bridge(in_low = 1.024 in_high = 1.024)
+.ENDS CMP1024
+
+
+* model file: /home/gothack/EAGLE/projects/Psionpi/CMP512.mdl
+**********************
+* Autodesk EAGLE - SPICE Model File
+**********************
+.SUBCKT CMP512 A D
+abridge [A] [D] adc_buff
+.model adc_buff adc_bridge(in_low = 0.512 in_high = 0.512)
+.ENDS CMP512
+
+
+* model file: /home/gothack/EAGLE/projects/Psionpi/SINEADC.mdl
+**********************
+* Autodesk EAGLE - SPICE Model File
+**********************
+.SUBCKT SINEADC A D
+abridge [A] [D] adc_buff
+.model adc_buff adc_bridge(in_low = 1.2 in_high = 1.7)
+.ENDS SINEADC
+
+
+* (model found in library)
+
+**********************
+* Autodesk EAGLE - SPICE Model File
+**********************
+.SUBCKT AND2 A B OUT
+a1 [A B] OUT and2
+.model and2 d_and(rise_delay = 1n fall_delay = 1n)
+.ENDS AND2
+
+
+* (model found in library)
+
+**********************
+* Autodesk EAGLE - SPICE Model File
+**********************
+.SUBCKT INV IN OUT
+a1 IN OUT inv1
+.model inv1 d_inverter(rise_delay = 1n fall_delay = 1n)
+.ENDS INV
+
+
+**********************
+* Autodesk EAGLE - SPICE Model File
+**********************
+.SUBCKT DTOAB1 D A
+abridge [D] [A] dac_buff
+ .model dac_buff dac_bridge(out_low = 0.3 out_high = 2.5)
+.ENDS DTOAB1
+
+* --------- simulation ---------
+
+
+.control
+set filetype=ascii
+TRAN 1e-5 0.003 0 1e-5 
+write voltage_playground.sch.sim V(N_32) V(N_33) V(P_VOUT) V(DIG_N_38) I(V_VCUR_2) I(V_VCUR_1) I(V_V1) I(V_V2) I(V_V3)
+.endc
+
+.END
+
+
+
+
+
+
+
+
+
+

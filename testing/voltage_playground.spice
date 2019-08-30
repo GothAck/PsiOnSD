@@ -1,0 +1,92 @@
+* SpiceNetList
+* 
+* Exported from voltage_playground.sch at 8/27/19 6:38 PM
+* 
+* EAGLE Version 9.4.2 Copyright (c) 1988-2019 Autodesk, Inc.
+* 
+.TEMP=25.000000
+* --------- .OPTIONS ---------
+* --------- .PARAMS ---------
+
+* --------- devices ---------
+D_D14 N_14 N_13 DMOD 
+D_D11 N_17 N_16 DMOD 
+C_C18 0 N_18 10n 
+D_D10 N_18 N_17 DMOD 
+D_D7 N_6 N_7 DMOD 
+C_C11 -P2 N_10 10n 
+D_D13 N_15 N_14 DMOD 
+C_C2 +P2 N_2 10n 
+C_C12 -P1 N_12 10n 
+X_IC1 +3V3 slg46826 
+R_R1 N_11 +FB 6.3M 
+R_R4 -FB +VREF 162k 
+D_D6 N_5 N_6 DMOD 
+D_D1 +3V3 N_1 DMOD 
+C_C17 -P2 N_17 10n 
+C_C13 -P2 N_13 10n 
+D_D12 N_16 N_15 DMOD 
+D_D17 N_10 N_9 DMOD 
+D_D16 N_12 N_10 DMOD 
+D_D3 N_2 N_3 DMOD 
+C_C5 +P1 N_5 10n 
+C_C4 +P2 N_4 10n 
+D_D18 N_9 0 DMOD 
+C_C16 -P1 N_16 10n 
+D_D8 N_7 N_8 DMOD 
+D_D15 N_13 N_12 DMOD 
+C_C1 +P1 N_1 10n 
+C_C14 -P1 N_14 10n 
+D_D5 N_4 N_5 DMOD 
+C_C7 +P1 N_7 10n 
+C_C9 0 N_11 10n 
+C_C15 -P2 N_15 10n 
+R_R2 +FB 0 300k 
+C_C3 +P1 N_3 10n 
+D_D4 N_3 N_4 DMOD 
+D_D9 N_8 N_11 DMOD 
+D_D2 N_1 N_2 DMOD 
+R_R3 N_18 -FB 6.3M 
+C_C8 +P2 N_8 10n 
+C_C6 +P2 N_6 10n 
+C_C10 -P1 N_9 10n 
+
+* --------- models ---------
+
+* model file: /home/gothack/EAGLE/projects/Psionpi/DMOD.mdl
+**********************
+* Autodesk EAGLE - Spice Model File
+* Date: 9/17/17
+* basic diode intrinsic model
+**********************
+.MODEL DMOD D
+
+
+* model file: /home/gothack/EAGLE/projects/Psionpi/slg46826.mdl
+*
+.SUBCKT slg46826 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+VREF 1.024 0 DC
+VREF2 0.512 0 DC
+R1 10 VREF 0
+VCLK 3.3 0 PULSE(0, 1, 2NS, 2NS, 2NS, 2NS, 1S)
+R1 17 VCLK 0
+ECMP1 20 runhigh = (1.024V, 1) (10v, 0)
+ECMP2 19 runhigh = (0.512V, 1) (10v, 0)
+.ENDS slg46826
+
+
+* --------- simulation ---------
+.print DC V(N_11) V(N_18)
+.print AC V(N_11) V(N_18)
+.print TRAN V(N_11) V(N_18)
+.END
+
+
+
+
+
+
+
+
+
+

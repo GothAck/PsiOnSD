@@ -1,0 +1,275 @@
+# NetScript
+# 
+# Exported from psionpi.sch at 8/15/19 9:43 AM
+# 
+# EAGLE Version 7.2.0 Copyright (c) 1988-2014 CadSoft
+# 
+Change Class 0;
+Signal 'GND'      'J2'       'A1' \
+                  'J2'       'A12' \
+                  'J2'       'B1' \
+                  'J2'       'B12' \
+                  'J2'       'P1_1' \
+                  'J2'       'P1_2' \
+                  'J2'       'P2_1' \
+                  'J2'       'P2_2' \
+                  'J2'       'P4' \
+                  'J2'       'P5' \
+                  'T1'       '6' \
+                  'T1'       'GND1' \
+                  'T1'       'GND3' \
+                  'U1'       '19' \
+                  'U1'       '3' \
+                  'U2'       '5' \
+                  'U3'       '65' \
+                  ;
+Change Class 0;
+Signal 'IOD_VCC33' 'U4'       'K10' \
+                  'U4'       'K11' \
+                  'U4'       'L10' \
+                  'U4'       'L11' \
+                  'U4'       'L12' \
+                  'U4'       'L7' \
+                  'U4'       'L8' \
+                  'U4'       'L9' \
+                  ;
+Change Class 0;
+Signal 'MUSB_DN'  'U1'       '20' \
+                  'U2'       '8' \
+                  ;
+Change Class 0;
+Signal 'MUSB_DP'  'U1'       '21' \
+                  'U2'       '9' \
+                  ;
+Change Class 0;
+Signal 'N$1'      'U4'       'A1' \
+                  'U4'       'A20' \
+                  'U4'       'D15' \
+                  'U4'       'D16' \
+                  'U4'       'D17' \
+                  'U4'       'D4' \
+                  'U4'       'D5' \
+                  'U4'       'E10' \
+                  'U4'       'E11' \
+                  'U4'       'E12' \
+                  'U4'       'E13' \
+                  'U4'       'E14' \
+                  'U4'       'E15' \
+                  'U4'       'E16' \
+                  'U4'       'E17' \
+                  'U4'       'E4' \
+                  'U4'       'E5' \
+                  'U4'       'E6' \
+                  'U4'       'E7' \
+                  'U4'       'E8' \
+                  'U4'       'E9' \
+                  'U4'       'F10' \
+                  'U4'       'F11' \
+                  'U4'       'F16' \
+                  'U4'       'F17' \
+                  'U4'       'F5' \
+                  'U4'       'G16' \
+                  'U4'       'G5' \
+                  'U4'       'H16' \
+                  'U4'       'H5' \
+                  'U4'       'J10' \
+                  'U4'       'J11' \
+                  'U4'       'J12' \
+                  'U4'       'J13' \
+                  'U4'       'J16' \
+                  'U4'       'J5' \
+                  'U4'       'J9' \
+                  'U4'       'K12' \
+                  'U4'       'K15' \
+                  'U4'       'K16' \
+                  'U4'       'K5' \
+                  'U4'       'K6' \
+                  'U4'       'K7' \
+                  'U4'       'K8' \
+                  'U4'       'K9' \
+                  'U4'       'L5' \
+                  ;
+Change Class 0;
+Signal 'N$3'      'U3'       '64' \
+                  ;
+Change Class 0;
+Signal 'N$4'      'U3'       '24' \
+                  ;
+Change Class 0;
+Signal 'N$5'      'U4'       'L15' \
+                  'U4'       'L16' \
+                  'U4'       'L6' \
+                  'U4'       'M15' \
+                  'U4'       'M16' \
+                  'U4'       'M5' \
+                  'U4'       'N15' \
+                  'U4'       'N16' \
+                  'U4'       'N5' \
+                  'U4'       'N6' \
+                  'U4'       'P12' \
+                  'U4'       'P13' \
+                  'U4'       'P14' \
+                  'U4'       'P15' \
+                  'U4'       'P16' \
+                  'U4'       'P5' \
+                  'U4'       'P6' \
+                  'U4'       'P7' \
+                  'U4'       'P8' \
+                  'U4'       'P9' \
+                  'U4'       'R10' \
+                  'U4'       'R11' \
+                  'U4'       'R12' \
+                  'U4'       'R16' \
+                  'U4'       'R5' \
+                  'U4'       'R9' \
+                  'U4'       'T10' \
+                  'U4'       'T12' \
+                  'U4'       'T13' \
+                  'U4'       'T14' \
+                  'U4'       'T15' \
+                  'U4'       'T16' \
+                  'U4'       'T17' \
+                  'U4'       'T4' \
+                  'U4'       'T5' \
+                  'U4'       'T6' \
+                  'U4'       'T7' \
+                  'U4'       'T8' \
+                  'U4'       'T9' \
+                  'U4'       'U16' \
+                  'U4'       'U17' \
+                  'U4'       'U4' \
+                  'U4'       'U5' \
+                  'U4'       'Y1' \
+                  'U4'       'Y20' \
+                  ;
+Change Class 0;
+Signal 'SD0_CD0'  'T1'       'CD1' \
+                  ;
+Change Class 0;
+Signal 'SD0_CD1'  'T1'       'CD2' \
+                  ;
+Change Class 0;
+Signal 'SD0_CLK'  'T1'       '5' \
+                  'U4'       'W3' \
+                  ;
+Change Class 0;
+Signal 'SD0_CMD'  'T1'       '3' \
+                  'U4'       'W2' \
+                  ;
+Change Class 0;
+Signal 'SD0_D0'   'T1'       '7' \
+                  'U4'       'Y3' \
+                  ;
+Change Class 0;
+Signal 'SD0_D1'   'T1'       '8' \
+                  'U4'       'V3' \
+                  ;
+Change Class 0;
+Signal 'SD0_D2'   'T1'       '1' \
+                  'U4'       'V2' \
+                  ;
+Change Class 0;
+Signal 'SD0_D3'   'T1'       '2' \
+                  'U4'       'Y2' \
+                  ;
+Change Class 0;
+Signal 'SD0_VDD'  'T1'       '4' \
+                  ;
+Change Class 0;
+Signal 'SYS_RTC_1P8V' 'U4'       'K13' \
+                  'U4'       'K14' \
+                  'U4'       'L13' \
+                  'U4'       'L14' \
+                  ;
+Change Class 0;
+Signal 'SYS_VCC'  'U4'       'F14' \
+                  'U4'       'F15' \
+                  'U4'       'G14' \
+                  'U4'       'G15' \
+                  ;
+Change Class 0;
+Signal 'SYS_VDD1_3P3V' 'U4'       'H14' \
+                  'U4'       'H15' \
+                  'U4'       'J14' \
+                  'U4'       'J15' \
+                  ;
+Change Class 0;
+Signal 'SYS_VDD_1P8V' 'U4'       'N10' \
+                  'U4'       'N11' \
+                  'U4'       'N12' \
+                  'U4'       'N13' \
+                  'U4'       'N14' \
+                  'U4'       'N7' \
+                  'U4'       'N8' \
+                  'U4'       'N9' \
+                  'U4'       'P10' \
+                  'U4'       'P11' \
+                  ;
+Change Class 0;
+Signal 'USBC_DN'  'J2'       'A7' \
+                  'J2'       'B7' \
+                  'U2'       '4' \
+                  ;
+Change Class 0;
+Signal 'USBC_DP'  'J2'       'A6' \
+                  'J2'       'B6' \
+                  'U2'       '3' \
+                  ;
+Change Class 0;
+Signal 'USB_DN'   'U2'       '6' \
+                  ;
+Change Class 0;
+Signal 'USB_DP'   'U2'       '7' \
+                  ;
+Change Class 0;
+Signal 'VCC33'    'U1'       '23' \
+                  'U2'       '1' \
+                  'U3'       '10' \
+                  'U3'       '46' \
+                  'U3'       '5' \
+                  'U3'       '52' \
+                  'U3'       '57' \
+                  'U4'       'F12' \
+                  'U4'       'F13' \
+                  'U4'       'G12' \
+                  'U4'       'G13' \
+                  ;
+Change Class 0;
+Signal 'VDD18'    'U3'       '25' \
+                  ;
+Change Class 0;
+Signal 'VDD18PLL' 'U3'       '62' \
+                  ;
+Change Class 0;
+Signal 'VDDSHV1'  'U4'       'M11' \
+                  ;
+Change Class 0;
+Signal 'VDDSHV2'  'U4'       'M10' \
+                  ;
+Change Class 0;
+Signal 'VDDSHV3'  'U4'       'M9' \
+                  ;
+Change Class 0;
+Signal 'VDDSHV4'  'U4'       'M7' \
+                  ;
+Change Class 0;
+Signal 'VDDSHV5'  'U4'       'M8' \
+                  ;
+Change Class 0;
+Signal 'VDDSHV6'  'U4'       'M12' \
+                  ;
+Change Class 0;
+Signal 'VIN_AC'   'U4'       'C18' \
+                  'U4'       'C19' \
+                  'U4'       'C20' \
+                  ;
+Change Class 0;
+Signal 'VIN_BAT'  'U4'       'D18' \
+                  'U4'       'D19' \
+                  'U4'       'D20' \
+                  ;
+Change Class 0;
+Signal 'VIN_USB'  'U4'       'B18' \
+                  'U4'       'B19' \
+                  'U4'       'B20' \
+                  ;

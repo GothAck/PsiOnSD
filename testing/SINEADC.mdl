@@ -1,0 +1,7 @@
+**********************
+* Autodesk EAGLE - SPICE Model File
+**********************
+.SUBCKT SINEADC A D
+abridge [A] [D] adc_buff
+.model adc_buff adc_bridge(in_low = 1.2 in_high = 1.7)
+.ENDS SINEADC

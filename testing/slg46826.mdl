@@ -1,0 +1,27 @@
+*
+.SUBCKT slg46826 N1 N2 N3 N4 N5 N6 N7 N8 N9 N10 N11 N12 N13 N14 N15 N16 N17 N18 N19 N20
+
+VREF 1.024 0 DC
+VREF2 0.512 0 DC
+
+abridge0 [N2] [CLK] ab0
+.model ab0 adc_bridge(in_low = 0.2 in_high = 2)
+
+abridge1 [N20] [RUNHIGH] ab1
+.model ab1 adc_bridge(in_low = 1.024 in_high = 1.024)
+abridge2 [N19] [RUNLOW] ab2
+.model ab2 adc_bridge(in_low = 0.512 in_high = 0.512)
+
+abridge3 [dd17] [N17] ab3
+.model ab3 dac_bridge(out_high=3.3 out_low = 0)
+
+abridge3 [dd15] [N15] ab4
+.model ab4 dac_bridge(out_high=3.3 out_low = 0)
+
+a1 [CLK, RUNHIGH] dd17 and1
+.model and1 d_and(rise_delay = 1ns, fall_delay = 1ns)
+
+a2 [CLK, RUNLOW] dd15 and2
+.model and2 d_and(rise_delay = 1ns, fall_delay = 1ns)
+
+.ENDS slg46826
