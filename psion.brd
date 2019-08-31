@@ -19,12 +19,12 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
@@ -37,20 +37,20 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tPadExt" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bPadExt" color="1" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
@@ -192,9 +192,9 @@
 <wire x1="135.3" y1="16.8" x2="161.7" y2="16.8" width="0.001" layer="20"/>
 <wire x1="161.7" y1="16.8" x2="159.12338125" y2="14.22338125" width="0.001" layer="20"/>
 <wire x1="159.12338125" y1="14.22338125" x2="157.99200625" y2="13.09200625" width="0.001" layer="20" curve="180"/>
-<wire x1="157.992009375" y1="13.092009375" x2="159.88401875" y2="11.2" width="0.001" layer="20"/>
+<wire x1="157.99200625" y1="13.09200625" x2="159.88401875" y2="11.2" width="0.001" layer="20"/>
 <wire x1="159.88401875" y1="11.2" x2="156.500003125" y2="6.7" width="0.001" layer="20" curve="73.886582"/>
-<wire x1="156.5" y1="6.7" x2="155.6" y2="6.7" width="0.001" layer="20"/>
+<wire x1="156.500003125" y1="6.7" x2="155.6" y2="6.7" width="0.001" layer="20"/>
 <wire x1="155.6" y1="6.7" x2="154.6" y2="5.7" width="0.001" layer="20" curve="90"/>
 <wire x1="154.6" y1="5.7" x2="154.6" y2="4.2" width="0.001" layer="20"/>
 <wire x1="154.6" y1="4.2" x2="155.6" y2="3.2" width="0.001" layer="20" curve="90"/>
@@ -4509,7 +4509,6 @@ Please make sure your boards conform to these design rules.
 <board_group name="LCD_BIAS_N"/>
 <board_group name="KBD_USB"/>
 <board_group name="EL_BACKLIGHT"/>
-<board_group name="LCD_BIAS_P2" grouprefs="LCD_BIAS_P"/>
 </groups>
 <elements>
 <element name="T1" library="con-3m" library_urn="urn:adsk.eagle:library:119" package="MICRO-SD-SOCKET-PP" value="2908-05WB-MG" x="21.375" y="49.875" smashed="yes" rot="MR270">
@@ -4542,9 +4541,9 @@ Please make sure your boards conform to these design rules.
 <attribute name="NAME" x="72.517" y="41.529" size="1.27" layer="25"/>
 <attribute name="VALUE" x="72.517" y="38.735" size="1.27" layer="27"/>
 </element>
-<element name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="" x="55.1434" y="33.1724" smashed="yes">
-<attribute name="NAME" x="54.5084" y="33.9344" size="1.27" layer="25"/>
-<attribute name="VALUE" x="54.5084" y="31.1404" size="1.27" layer="27"/>
+<element name="R2" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="" x="55.7784" y="33.2994" smashed="yes">
+<attribute name="NAME" x="55.1434" y="34.0614" size="1.27" layer="25"/>
+<attribute name="VALUE" x="55.1434" y="31.2674" size="1.27" layer="27"/>
 </element>
 <element name="U$1" library="LM832" package="LM832SMT" value="LM832" x="21.5" y="49.125" smashed="yes" rot="MR270"/>
 <element name="KBD" library="54548-2271" package="MOLEX_54548-2271" value="54548-2271" x="15.875" y="21.336" smashed="yes" rot="R180" grouprefs="KBD_USB">
@@ -4605,19 +4604,19 @@ Please make sure your boards conform to these design rules.
 <attribute name="NAME" x="21.844" y="6.096" size="1.27" layer="25" rot="R90"/>
 <attribute name="VALUE" x="27.178" y="6.096" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="U2" library="HV823LG-G" package="SOIC127P600X175-8N" value="HV823LG-G" x="51.689" y="20.193" smashed="yes" rot="R180" grouprefs="EL_BACKLIGHT">
-<attribute name="AVAILABILITY" value="Unavailable" x="51.689" y="20.193" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DESCRIPTION" value=" Driver; EL lamp driver; 160÷200V; Channels: 1; Outputs: 2; SO8 " x="51.689" y="20.193" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MF" value="Microchip" x="51.689" y="20.193" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MP" value="HV823LG-G" x="51.689" y="20.193" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="55.539" y="17.491" size="1.27" layer="25" rot="R180"/>
-<attribute name="PACKAGE" value="SOIC-8 Microchip" x="51.689" y="20.193" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="PRICE" value="None" x="51.689" y="20.193" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="55.539" y="22.895" size="1.27" layer="27" rot="R180" align="top-left"/>
+<element name="U2" library="HV823LG-G" package="SOIC127P600X175-8N" value="HV823LG-G" x="40.894" y="26.289" smashed="yes" rot="R90" grouprefs="EL_BACKLIGHT">
+<attribute name="AVAILABILITY" value="Unavailable" x="40.894" y="26.289" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DESCRIPTION" value=" Driver; EL lamp driver; 160÷200V; Channels: 1; Outputs: 2; SO8 " x="40.894" y="26.289" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MF" value="Microchip" x="40.894" y="26.289" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MP" value="HV823LG-G" x="40.894" y="26.289" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="38.192" y="22.439" size="1.27" layer="25" rot="R90"/>
+<attribute name="PACKAGE" value="SOIC-8 Microchip" x="40.894" y="26.289" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="PRICE" value="None" x="40.894" y="26.289" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="43.596" y="22.439" size="1.27" layer="27" rot="R90" align="top-left"/>
 </element>
-<element name="R4" library="adafruit" package="M0805" value="100" x="27.305" y="26.797" smashed="yes">
-<attribute name="NAME" x="26.289" y="27.813" size="1.27" layer="25"/>
-<attribute name="VALUE" x="28.321" y="24.511" size="1.27" layer="27"/>
+<element name="R4" library="adafruit" package="M0805" value="100" x="36.068" y="28.575" smashed="yes">
+<attribute name="NAME" x="35.052" y="29.591" size="1.27" layer="25"/>
+<attribute name="VALUE" x="37.084" y="26.289" size="1.27" layer="27"/>
 </element>
 <element name="U7" library="ATTINY404-SSN" package="SOIC127P600X175-14N" value="ATTINY404-SSN" x="60.706" y="5.461" smashed="yes">
 <attribute name="AVAILABILITY" value="Unavailable" x="60.706" y="5.461" size="1.778" layer="27" display="off"/>
@@ -4644,29 +4643,29 @@ Please make sure your boards conform to these design rules.
 <element name="U$3" library="gothack" package="1.27MM-ICSP" value="1.27MM-ICSP" x="9.144" y="1.397" smashed="yes" rot="R90" grouprefs="KBD_USB">
 <attribute name="NAME" x="7.112" y="2.667" size="1.016" layer="25" rot="R90" align="bottom-center"/>
 </element>
-<element name="L3" library="gothack" package="IND_LQH43CN1R0M03L" value="LQH43NN561J03L" x="45.72" y="26.289" smashed="yes" rot="R90" grouprefs="EL_BACKLIGHT">
-<attribute name="NAME" x="43.46571875" y="22.88251875" size="1.27241875" layer="25" rot="R90"/>
-<attribute name="VALUE" x="49.220409375" y="22.538559375" size="1.27015" layer="27" rot="R90"/>
+<element name="L3" library="gothack" package="IND_LQH43CN1R0M03L" value="LQH43NN561J03L" x="44.704" y="32.0675" smashed="yes" grouprefs="EL_BACKLIGHT">
+<attribute name="NAME" x="41.29751875" y="34.32178125" size="1.27241875" layer="25"/>
+<attribute name="VALUE" x="40.953559375" y="28.567090625" size="1.27015" layer="27"/>
 </element>
-<element name="D7" library="ipc-7351-diode" package="SOT95P280X135-3N" value="MMBD914-E3-18" x="50.292" y="26.924" smashed="yes" grouprefs="EL_BACKLIGHT">
-<attribute name="NAME" x="49.196" y="28.6915" size="1.27" layer="25" font="vector" ratio="10"/>
-<attribute name="VALUE" x="49.196" y="23.8865" size="1.27" layer="27" font="vector" ratio="10"/>
+<element name="D7" library="ipc-7351-diode" package="SOT95P280X135-3N" value="MMBD914-E3-18" x="47.752" y="28.321" smashed="yes" grouprefs="EL_BACKLIGHT">
+<attribute name="NAME" x="46.656" y="30.0885" size="1.27" layer="25" font="vector" ratio="10"/>
+<attribute name="VALUE" x="46.656" y="25.2835" size="1.27" layer="27" font="vector" ratio="10"/>
 </element>
-<element name="C15" library="dp_devices" package="C805" value="0.01uf 100V" x="53.721" y="24.892" smashed="yes" rot="R270" grouprefs="EL_BACKLIGHT">
-<attribute name="NAME" x="54.991" y="26.162" size="1.016" layer="25" ratio="12" rot="R270"/>
-<attribute name="VALUE" x="51.4985" y="26.162" size="1.016" layer="27" ratio="12" rot="R270"/>
+<element name="C15" library="dp_devices" package="C805" value="0.01uf 100V" x="45.593" y="25.654" smashed="yes" rot="R180" grouprefs="EL_BACKLIGHT">
+<attribute name="NAME" x="46.863" y="24.384" size="1.016" layer="25" ratio="12" rot="R180"/>
+<attribute name="VALUE" x="46.863" y="27.8765" size="1.016" layer="27" ratio="12" rot="R180"/>
 </element>
-<element name="C16" library="dp_devices" package="C805" value="0.1uf" x="50.165" y="23.876" smashed="yes" grouprefs="EL_BACKLIGHT">
-<attribute name="NAME" x="48.895" y="25.146" size="1.016" layer="25" ratio="12"/>
-<attribute name="VALUE" x="48.895" y="21.6535" size="1.016" layer="27" ratio="12"/>
+<element name="C16" library="dp_devices" package="C805" value="0.1uf" x="44.577" y="28.321" smashed="yes" rot="R270" grouprefs="EL_BACKLIGHT">
+<attribute name="NAME" x="45.847" y="29.591" size="1.016" layer="25" ratio="12" rot="R270"/>
+<attribute name="VALUE" x="42.3545" y="29.591" size="1.016" layer="27" ratio="12" rot="R270"/>
 </element>
-<element name="R15" library="adafruit" package="M0805" value="330k" x="53.975" y="15.24" smashed="yes" rot="R270" grouprefs="EL_BACKLIGHT">
-<attribute name="NAME" x="54.991" y="16.256" size="1.27" layer="25" rot="R270"/>
-<attribute name="VALUE" x="51.689" y="16.256" size="1.27" layer="27" rot="R270"/>
+<element name="R15" library="adafruit" package="M0805" value="330k" x="36.068" y="24.003" smashed="yes" rot="R180" grouprefs="EL_BACKLIGHT">
+<attribute name="NAME" x="37.084" y="22.987" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="37.084" y="26.289" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R16" library="adafruit" package="M0805" value="2M" x="51.689" y="15.24" smashed="yes" rot="R270" grouprefs="EL_BACKLIGHT">
-<attribute name="NAME" x="52.705" y="16.256" size="1.27" layer="25" rot="R270"/>
-<attribute name="VALUE" x="49.403" y="16.256" size="1.27" layer="27" rot="R270"/>
+<element name="R16" library="adafruit" package="M0805" value="2M" x="36.068" y="26.289" smashed="yes" rot="R180" grouprefs="EL_BACKLIGHT">
+<attribute name="NAME" x="37.084" y="25.273" size="1.27" layer="25" rot="R180"/>
+<attribute name="VALUE" x="37.084" y="28.575" size="1.27" layer="27" rot="R180"/>
 </element>
 <element name="U8" library="microbuilder" package="PVQFN-16" value="TPS61090RSAR" x="65.659" y="58.674" smashed="yes" rot="MR270">
 <attribute name="NAME" x="62.777" y="60.698" size="0.8128" layer="26" ratio="18" rot="MR270"/>
@@ -4780,9 +4779,9 @@ Please make sure your boards conform to these design rules.
 <attribute name="NAME" x="25.654" y="32.5755" size="1.016" layer="26" ratio="12" rot="MR90"/>
 <attribute name="VALUE" x="22.1615" y="32.5755" size="1.016" layer="28" ratio="12" rot="MR90"/>
 </element>
-<element name="JP1" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" package="SMT-JUMPER_2_NO_NO-SILK" package3d_urn="urn:adsk.eagle:package:39277/1" value="JUMPER-SMT_2_NO_NO-SILK" x="52.197" y="33.2105" smashed="yes">
-<attribute name="NAME" x="52.197" y="34.3535" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
-<attribute name="VALUE" x="52.197" y="32.0675" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
+<element name="JP1" library="SparkFun-Jumpers" library_urn="urn:adsk.eagle:library:528" package="SMT-JUMPER_2_NO_NO-SILK" package3d_urn="urn:adsk.eagle:package:39277/1" value="JUMPER-SMT_2_NO_NO-SILK" x="52.832" y="33.2105" smashed="yes">
+<attribute name="NAME" x="52.832" y="34.3535" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center"/>
+<attribute name="VALUE" x="52.832" y="32.0675" size="0.6096" layer="27" font="vector" ratio="20" align="top-center"/>
 </element>
 <element name="U$4" library="USB-C" package="X2QFN" value="TUSB320XQFN" x="11.176" y="66.294" smashed="yes" rot="MR180"/>
 <element name="R24" library="microbuilder" package="0805" value="200K" x="27.432" y="63.754" smashed="yes" rot="MR90">
@@ -4805,7 +4804,7 @@ Please make sure your boards conform to these design rules.
 <attribute name="NAME" x="10.541" y="67.564" size="1.27" layer="26" rot="MR180"/>
 <attribute name="VALUE" x="10.541" y="71.374" size="1.27" layer="28" rot="MR180"/>
 </element>
-<element name="U5" library="MAX1620EEE_" package="SOP63P602X175-16N" value="MAX1620EEE+" x="38.862" y="14.478" smashed="yes" rot="R90" grouprefs="LCD_BIAS_P2 LCD_BIAS_P">
+<element name="U5" library="MAX1620EEE_" package="SOP63P602X175-16N" value="MAX1620EEE+" x="38.862" y="14.478" smashed="yes" rot="R90" grouprefs="LCD_BIAS_P">
 <attribute name="AVAILABILITY" value="Unavailable" x="38.862" y="14.478" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DESCRIPTION" value=" Digitally Adjustable LCD Bias Supplies 16-Pin QSOP " x="38.862" y="14.478" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MF" value="Maxim Integrated" x="38.862" y="14.478" size="1.778" layer="27" rot="R90" display="off"/>
@@ -4815,67 +4814,67 @@ Please make sure your boards conform to these design rules.
 <attribute name="PRICE" value="None" x="38.862" y="14.478" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="41.7865" y="10.843" size="1.27" layer="27" rot="R90" align="top-left"/>
 </element>
-<element name="L2" library="microbuilder" package="INDUCTOR_1007" value="LQH2MCN270K02L" x="38.1" y="14.478" smashed="yes" rot="MR0" grouprefs="LCD_BIAS_P2 LCD_BIAS_P">
+<element name="L2" library="microbuilder" package="INDUCTOR_1007" value="LQH2MCN270K02L" x="38.1" y="14.478" smashed="yes" rot="MR0" grouprefs="LCD_BIAS_P">
 <attribute name="NAME" x="40.005" y="13.335" size="1.016" layer="26" ratio="18" rot="MR90"/>
 <attribute name="VALUE" x="41.275" y="10.033" size="0.8128" layer="28" ratio="10" rot="MR0"/>
 </element>
-<element name="D4" library="ipc-7351-diode" package="SOD3718X135N" value="MBRS0540" x="41.91" y="15.621" smashed="yes" rot="MR90" grouprefs="LCD_BIAS_P2 LCD_BIAS_P">
+<element name="D4" library="ipc-7351-diode" package="SOD3718X135N" value="MBRS0540" x="41.91" y="15.621" smashed="yes" rot="MR90" grouprefs="LCD_BIAS_P">
 <attribute name="NAME" x="43.1275" y="14.7925" size="1.016" layer="26" ratio="10" rot="MR90"/>
 <attribute name="VALUE" x="39.4225" y="14.1575" size="1.27" layer="28" font="vector" ratio="10" rot="MR90"/>
 </element>
-<element name="Q3" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" package="SOT23-3" value="NTF3055L108T1G" x="38.227" y="18.415" smashed="yes" rot="MR180" grouprefs="LCD_BIAS_P2 LCD_BIAS_P">
+<element name="Q3" library="SparkFun-DiscreteSemi" library_urn="urn:adsk.eagle:library:514" package="SOT23-3" value="NTF3055L108T1G" x="38.227" y="18.415" smashed="yes" rot="MR180" grouprefs="LCD_BIAS_P">
 <attribute name="NAME" x="40.0165" y="17.5865" size="1.016" layer="26" ratio="10" rot="MR90"/>
 <attribute name="VALUE" x="36.7635" y="23.2525" size="1.27" layer="28" font="vector" ratio="10" rot="MR180"/>
 </element>
-<element name="Q8" library="ipc-7351-transistor" package="SOT95P280X135-3N" value="MMBT2907ALT1G" x="45.974" y="19.558" smashed="yes" rot="R90" grouprefs="LCD_BIAS_P2 LCD_BIAS_P">
+<element name="Q8" library="ipc-7351-transistor" package="SOT95P280X135-3N" value="MMBT2907ALT1G" x="45.974" y="19.558" smashed="yes" rot="R90" grouprefs="LCD_BIAS_P">
 <attribute name="NAME" x="47.7415" y="20.273" size="1.016" layer="25" font="vector" ratio="10" rot="R270"/>
 <attribute name="VALUE" x="49.0115" y="18.462" size="1.27" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
-<element name="R11" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1M" x="42.799" y="15.367" smashed="yes" rot="R90" grouprefs="LCD_BIAS_P2 LCD_BIAS_P">
+<element name="R11" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="1M" x="42.799" y="15.367" smashed="yes" rot="R90" grouprefs="LCD_BIAS_P">
 <attribute name="NAME" x="43.561" y="18.415" size="1.016" layer="25" rot="R270"/>
 <attribute name="VALUE" x="44.831" y="14.732" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R12" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="300k" x="42.799" y="19.431" smashed="yes" rot="R90" grouprefs="LCD_BIAS_P2 LCD_BIAS_P">
+<element name="R12" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="300k" x="42.799" y="19.431" smashed="yes" rot="R90" grouprefs="LCD_BIAS_P">
 <attribute name="NAME" x="43.561" y="22.098" size="1.016" layer="25" rot="R270"/>
 <attribute name="VALUE" x="44.831" y="18.796" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="3.3M" x="46.736" y="15.367" smashed="yes" rot="R90" grouprefs="LCD_BIAS_P2 LCD_BIAS_P">
+<element name="R13" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="3.3M" x="46.736" y="15.367" smashed="yes" rot="R90" grouprefs="LCD_BIAS_P">
 <attribute name="NAME" x="47.752" y="16.002" size="1.016" layer="25" rot="R270"/>
 <attribute name="VALUE" x="48.768" y="14.732" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="2.2M" x="44.831" y="11.303" smashed="yes" rot="R270" grouprefs="LCD_BIAS_P2 LCD_BIAS_P">
+<element name="R14" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="2.2M" x="44.831" y="11.303" smashed="yes" rot="R270" grouprefs="LCD_BIAS_P">
 <attribute name="NAME" x="47.498" y="11.303" size="1.016" layer="25" rot="R270"/>
 <attribute name="VALUE" x="42.799" y="11.938" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="R27" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="2.2M" x="42.799" y="11.303" smashed="yes" rot="R270" grouprefs="LCD_BIAS_P2 LCD_BIAS_P">
+<element name="R27" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="2.2M" x="42.799" y="11.303" smashed="yes" rot="R270" grouprefs="LCD_BIAS_P">
 <attribute name="NAME" x="46.355" y="11.303" size="1.016" layer="25" rot="R270"/>
 <attribute name="VALUE" x="40.767" y="11.938" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="C8" library="dp_devices" package="C805" value="0.1uf" x="39.7891" y="19.8628" smashed="yes" rot="R90" grouprefs="LCD_BIAS_P2 LCD_BIAS_P">
+<element name="C8" library="dp_devices" package="C805" value="0.1uf" x="39.7891" y="19.8628" smashed="yes" rot="R90" grouprefs="LCD_BIAS_P">
 <attribute name="NAME" x="40.6019" y="20.6502" size="1.016" layer="25" ratio="12" rot="R270"/>
 <attribute name="VALUE" x="42.0116" y="18.5928" size="1.016" layer="27" ratio="12" rot="R90"/>
 </element>
-<element name="C9" library="dp_devices" package="C805" value="0.1uf" x="37.846" y="9.4615" smashed="yes" rot="R180" grouprefs="LCD_BIAS_P2 LCD_BIAS_P">
+<element name="C9" library="dp_devices" package="C805" value="0.1uf" x="37.846" y="9.4615" smashed="yes" rot="R180" grouprefs="LCD_BIAS_P">
 <attribute name="NAME" x="38.735" y="11.2395" size="1.016" layer="25" ratio="12" rot="R180"/>
 <attribute name="VALUE" x="39.116" y="11.684" size="1.016" layer="27" ratio="12" rot="R180"/>
 </element>
-<element name="C10" library="dp_devices" package="C805" value="100pf" x="44.7802" y="15.3924" smashed="yes" rot="R270" grouprefs="LCD_BIAS_P2 LCD_BIAS_P">
+<element name="C10" library="dp_devices" package="C805" value="100pf" x="44.7802" y="15.3924" smashed="yes" rot="R270" grouprefs="LCD_BIAS_P">
 <attribute name="NAME" x="45.7962" y="13.9954" size="1.016" layer="25" ratio="12" rot="R270"/>
 <attribute name="VALUE" x="42.5577" y="16.6624" size="1.016" layer="27" ratio="12" rot="R270"/>
 </element>
-<element name="C11" library="gothack" package="CAPCP6032X280N" value="22uf" x="41.402" y="5.842" smashed="yes" rot="R270" grouprefs="LCD_BIAS_P2 LCD_BIAS_P">
+<element name="C11" library="gothack" package="CAPCP6032X280N" value="22uf" x="41.402" y="5.842" smashed="yes" rot="R270" grouprefs="LCD_BIAS_P">
 <attribute name="NAME" x="38.5572" y="5.842" size="1.016" layer="25" ratio="10" rot="SR270"/>
 <attribute name="VALUE" x="37.0078" y="11.5062" size="2.0828" layer="27" ratio="10" rot="SR270"/>
 </element>
-<element name="C12" library="gothack" package="CAPCP6032X280N" value="22uf" x="45.085" y="5.842" smashed="yes" rot="R270" grouprefs="LCD_BIAS_P2 LCD_BIAS_P">
+<element name="C12" library="gothack" package="CAPCP6032X280N" value="22uf" x="45.085" y="5.842" smashed="yes" rot="R270" grouprefs="LCD_BIAS_P">
 <attribute name="NAME" x="46.9392" y="5.842" size="1.016" layer="25" ratio="10" rot="SR270"/>
 <attribute name="VALUE" x="40.6908" y="11.5062" size="2.0828" layer="27" ratio="10" rot="SR270"/>
 </element>
-<element name="D5" library="ipc-7351-diode" package="SOD3718X135N" value="MBRS0540" x="38.4302" y="10.3378" smashed="yes" rot="MR90" grouprefs="LCD_BIAS_P2 LCD_BIAS_P">
+<element name="D5" library="ipc-7351-diode" package="SOD3718X135N" value="MBRS0540" x="38.4302" y="10.3378" smashed="yes" rot="MR90" grouprefs="LCD_BIAS_P">
 <attribute name="NAME" x="36.3457" y="9.5093" size="1.016" layer="26" ratio="10" rot="MR90"/>
 <attribute name="VALUE" x="35.9427" y="8.8743" size="1.27" layer="28" font="vector" ratio="10" rot="MR90"/>
 </element>
-<element name="R28" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k" x="40.6908" y="10.922" smashed="yes" rot="MR90" grouprefs="LCD_BIAS_P2 LCD_BIAS_P">
+<element name="R28" library="resistor" library_urn="urn:adsk.eagle:library:348" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k" x="40.6908" y="10.922" smashed="yes" rot="MR90" grouprefs="LCD_BIAS_P">
 <attribute name="NAME" x="41.5798" y="9.525" size="1.016" layer="26" rot="MR90"/>
 <attribute name="VALUE" x="38.6588" y="10.287" size="1.27" layer="28" rot="MR90"/>
 </element>
@@ -5399,17 +5398,14 @@ Please make sure your boards conform to these design rules.
 <wire x1="62.545" y1="10.033" x2="61.529" y2="11.049" width="0.3048" layer="1"/>
 <wire x1="63.161" y1="9.271" x2="63.161" y2="9.483" width="0.3048" layer="1"/>
 <wire x1="63.161" y1="9.483" x2="62.611" y2="10.033" width="0.3048" layer="1"/>
-<via x="50.673" y="22.098" extent="1-16" drill="0.3" grouprefs="EL_BACKLIGHT"/>
-<wire x1="49.234" y1="22.098" x2="50.673" y2="22.098" width="0.3048" layer="1" grouprefs="EL_BACKLIGHT"/>
+<via x="42.799" y="27.3685" extent="1-16" drill="0.3" grouprefs="EL_BACKLIGHT"/>
+<wire x1="42.799" y1="28.744" x2="42.799" y2="27.3685" width="0.3048" layer="1" grouprefs="EL_BACKLIGHT"/>
 <wire x1="65.405" y1="8.084275" x2="64.218275" y2="9.271" width="0.3048" layer="1"/>
 <wire x1="63.161" y1="9.271" x2="64.218275" y2="9.271" width="0.3048" layer="1"/>
 <wire x1="65.405" y1="8.084275" x2="65.405" y2="6.223" width="0.3048" layer="1"/>
 <contactref element="C15" pad="2"/>
 <contactref element="C16" pad="2"/>
-<wire x1="49.234" y1="22.098" x2="49.337" y2="22.098" width="0.3048" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="49.337" y1="22.098" x2="51.115" y2="23.876" width="0.3048" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="51.115" y1="23.876" x2="53.655" y2="23.876" width="0.3048" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="53.655" y1="23.876" x2="53.721" y2="23.942" width="0.3048" layer="1" grouprefs="EL_BACKLIGHT"/>
+<wire x1="44.577" y1="25.72" x2="44.643" y2="25.654" width="0.3048" layer="1" grouprefs="EL_BACKLIGHT"/>
 <contactref element="LCD" pad="8"/>
 <contactref element="LCD" pad="5"/>
 <wire x1="20.094" y1="30.825" x2="20.094" y2="31.27" width="0.254" layer="1"/>
@@ -5506,7 +5502,7 @@ Please make sure your boards conform to these design rules.
 <contactref element="JP1" pad="1"/>
 <wire x1="72.0344" y1="39.4716" x2="72.202" y2="39.6392" width="0.254" layer="1"/>
 <wire x1="72.202" y1="39.6392" x2="72.202" y2="40.767" width="0.254" layer="1"/>
-<via x="51.1175" y="33.2105" extent="1-16" drill="0.3"/>
+<via x="51.6255" y="33.2105" extent="1-16" drill="0.3"/>
 <contactref element="U$4" pad="P$5"/>
 <contactref element="R18" pad="2"/>
 <contactref element="U$4" pad="P$10"/>
@@ -5540,7 +5536,7 @@ Please make sure your boards conform to these design rules.
 <wire x1="8.128" y1="13.208" x2="8.8392" y2="13.208" width="0.254" layer="1" grouprefs="KBD_USB"/>
 <wire x1="8.8392" y1="13.208" x2="8.8646" y2="13.2334" width="0.254" layer="1" grouprefs="KBD_USB"/>
 <wire x1="7.7978" y1="14.48596875" x2="7.7978" y2="13.5382" width="0.254" layer="1" grouprefs="KBD_USB"/>
-<wire x1="51.7906" y1="33.2105" x2="51.1175" y2="33.2105" width="0.254" layer="1"/>
+<wire x1="52.4256" y1="33.2105" x2="51.6255" y2="33.2105" width="0.254" layer="1"/>
 <wire x1="82.042" y1="19.939" x2="80.4694" y2="18.3664" width="0.254" layer="16"/>
 <wire x1="79.69" y1="16.9129625" x2="79.69" y2="16.622" width="0.254" layer="16"/>
 <wire x1="80.4694" y1="18.3664" x2="80.4694" y2="17.6923625" width="0.254" layer="16"/>
@@ -5553,26 +5549,26 @@ Please make sure your boards conform to these design rules.
 <contactref element="C12" pad="N"/>
 <contactref element="C9" pad="2"/>
 <contactref element="C8" pad="2"/>
-<wire x1="42.799" y1="20.381" x2="40.2209" y2="20.381" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="40.2209" y1="20.381" x2="39.7891" y2="20.8128" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<via x="38.354" y="19.7485" extent="1-16" drill="0.35" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="39.177" y1="19.415" x2="38.6875" y2="19.415" width="0.254" layer="16" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="38.6875" y1="19.415" x2="38.354" y2="19.7485" width="0.254" layer="16" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="39.1795" y1="17.113" x2="38.5445" y2="17.113" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="38.5445" y1="17.113" x2="38.5445" y2="19.558" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="38.5445" y1="19.558" x2="38.354" y2="19.7485" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="39.7891" y1="20.8128" x2="38.5445" y2="19.5682" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="38.5445" y1="19.5682" x2="38.5445" y2="19.558" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<via x="38.9255" y="7.112" extent="1-16" drill="0.35" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<via x="43.2435" y="3.683" extent="1-16" drill="0.35" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="45.085" y1="3.7084" x2="45.0596" y2="3.683" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="45.0596" y1="3.683" x2="43.2435" y2="3.683" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="41.402" y1="3.7084" x2="41.4274" y2="3.683" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="41.4274" y1="3.683" x2="43.2435" y2="3.683" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="41.402" y1="3.7084" x2="41.402" y2="4.6355" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="41.402" y1="4.6355" x2="38.9255" y2="7.112" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="38.9255" y1="7.112" x2="36.896" y2="9.1415" width="0.254" layer="1" grouprefs="LCD_BIAS_P2"/>
-<wire x1="36.896" y1="9.4615" x2="36.896" y2="9.1415" width="0.254" layer="1" grouprefs="LCD_BIAS_P2"/>
+<wire x1="42.799" y1="20.381" x2="40.2209" y2="20.381" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="40.2209" y1="20.381" x2="39.7891" y2="20.8128" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<via x="38.354" y="19.7485" extent="1-16" drill="0.35" grouprefs="LCD_BIAS_P"/>
+<wire x1="39.177" y1="19.415" x2="38.6875" y2="19.415" width="0.254" layer="16" grouprefs="LCD_BIAS_P"/>
+<wire x1="38.6875" y1="19.415" x2="38.354" y2="19.7485" width="0.254" layer="16" grouprefs="LCD_BIAS_P"/>
+<wire x1="39.1795" y1="17.113" x2="38.5445" y2="17.113" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="38.5445" y1="17.113" x2="38.5445" y2="19.558" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="38.5445" y1="19.558" x2="38.354" y2="19.7485" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="39.7891" y1="20.8128" x2="38.5445" y2="19.5682" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="38.5445" y1="19.5682" x2="38.5445" y2="19.558" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<via x="38.9255" y="7.112" extent="1-16" drill="0.35" grouprefs="LCD_BIAS_P"/>
+<via x="43.2435" y="3.683" extent="1-16" drill="0.35" grouprefs="LCD_BIAS_P"/>
+<wire x1="45.085" y1="3.7084" x2="45.0596" y2="3.683" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="45.0596" y1="3.683" x2="43.2435" y2="3.683" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="41.402" y1="3.7084" x2="41.4274" y2="3.683" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="41.4274" y1="3.683" x2="43.2435" y2="3.683" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="41.402" y1="3.7084" x2="41.402" y2="4.6355" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="41.402" y1="4.6355" x2="38.9255" y2="7.112" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="38.9255" y1="7.112" x2="36.896" y2="9.1415" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="36.896" y1="9.4615" x2="36.896" y2="9.1415" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
 <contactref element="U6" pad="13"/>
 <contactref element="U6" pad="12"/>
 <contactref element="Q2" pad="2"/>
@@ -5604,6 +5600,10 @@ Please make sure your boards conform to these design rules.
 <wire x1="32.893" y1="5.8105" x2="32.893" y2="6.731" width="0.254" layer="1" grouprefs="LCD_BIAS_N"/>
 <wire x1="31.623" y1="8.001" x2="31.623" y2="11.0805" width="0.254" layer="1" grouprefs="LCD_BIAS_N"/>
 <wire x1="32.893" y1="6.731" x2="31.623" y2="8.001" width="0.254" layer="1" grouprefs="LCD_BIAS_N"/>
+<wire x1="42.799" y1="27.3685" x2="42.8015" y2="27.371" width="0.254" layer="1"/>
+<wire x1="42.8015" y1="27.371" x2="44.577" y2="27.371" width="0.254" layer="1"/>
+<wire x1="44.577" y1="27.371" x2="44.643" y2="27.305" width="0.254" layer="1"/>
+<wire x1="44.643" y1="27.305" x2="44.643" y2="25.654" width="0.254" layer="1"/>
 <wire x1="67.759" y1="59.649" x2="67.759" y2="58.999" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="USBC_DP" class="1">
@@ -6312,14 +6312,14 @@ Please make sure your boards conform to these design rules.
 <via x="58.039" y="34.29" extent="1-16" drill="0.3"/>
 <wire x1="58.6994" y1="34.3916" x2="58.1406" y2="34.3916" width="0.1524" layer="16"/>
 <wire x1="58.1406" y1="34.3916" x2="58.039" y2="34.29" width="0.1524" layer="16"/>
-<wire x1="58.039" y1="34.29" x2="56.9214" y2="33.1724" width="0.1524" layer="1"/>
-<wire x1="56.9214" y1="33.1724" x2="56.0934" y2="33.1724" width="0.1524" layer="1"/>
+<wire x1="58.039" y1="34.29" x2="57.0484" y2="33.2994" width="0.1524" layer="1"/>
+<wire x1="57.0484" y1="33.2994" x2="56.7284" y2="33.2994" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$12">
 <contactref element="R2" pad="1"/>
 <contactref element="JP1" pad="2"/>
-<wire x1="52.6034" y1="33.2105" x2="54.1553" y2="33.2105" width="0.1524" layer="1"/>
-<wire x1="54.1553" y1="33.2105" x2="54.1934" y2="33.1724" width="0.1524" layer="1"/>
+<wire x1="53.2384" y1="33.2105" x2="54.7395" y2="33.2105" width="0.1524" layer="1"/>
+<wire x1="54.7395" y1="33.2105" x2="54.8284" y2="33.2994" width="0.1524" layer="1"/>
 </signal>
 <signal name="LCD_AC_BIAS_EN" class="4">
 <contactref element="U4" pad="V20"/>
@@ -6858,32 +6858,28 @@ Please make sure your boards conform to these design rules.
 <signal name="EL_VB">
 <contactref element="U2" pad="6"/>
 <contactref element="LCD" pad="1"/>
-<wire x1="49.234" y1="20.828" x2="48.24055" y2="20.828" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="24.4095" y1="27.9145" x2="29.3912125" y2="27.9145" width="0.254" layer="1"/>
-<wire x1="22.094" y1="30.23" x2="22.094" y2="30.825" width="0.254" layer="1"/>
-<wire x1="24.4095" y1="27.9145" x2="22.094" y2="30.23" width="0.254" layer="1"/>
-<wire x1="29.3912125" y1="27.9145" x2="31.4612125" y2="25.8445" width="0.254" layer="1"/>
-<wire x1="31.4612125" y1="25.8445" x2="43.22405" y2="25.8445" width="0.254" layer="1"/>
-<wire x1="43.22405" y1="25.8445" x2="48.24055" y2="20.828" width="0" layer="19" extent="1-1"/>
+<wire x1="41.529" y1="29.718" x2="40.422" y2="30.825" width="0.254" layer="1"/>
+<wire x1="40.422" y1="30.825" x2="22.094" y2="30.825" width="0.254" layer="1"/>
+<wire x1="41.529" y1="29.718" x2="41.529" y2="28.744" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$15">
 <contactref element="U2" pad="7"/>
 <contactref element="R4" pad="2"/>
-<wire x1="49.234" y1="19.558" x2="48.3906125" y2="19.558" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="42.5105125" y1="25.4381" x2="31.319175" y2="25.4381" width="0.254" layer="1"/>
-<wire x1="29.960275" y1="26.797" x2="28.255" y2="26.797" width="0.254" layer="1"/>
-<wire x1="31.319175" y1="25.4381" x2="29.960275" y2="26.797" width="0.254" layer="1"/>
-<wire x1="42.5105125" y1="25.4381" x2="48.3906125" y2="19.558" width="0" layer="19" extent="1-1"/>
+<wire x1="40.259" y1="28.744" x2="40.259" y2="29.5873875" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
+<wire x1="40.259" y1="28.744" x2="40.259" y2="29.718" width="0.254" layer="1"/>
+<wire x1="40.259" y1="29.718" x2="40.005" y2="29.972" width="0.254" layer="1"/>
+<wire x1="40.005" y1="29.972" x2="38.542" y2="29.972" width="0.254" layer="1"/>
+<wire x1="38.542" y1="29.972" x2="37.145" y2="28.575" width="0.254" layer="1"/>
+<wire x1="37.145" y1="28.575" x2="37.018" y2="28.575" width="0.254" layer="1"/>
 </signal>
 <signal name="EL_VA">
 <contactref element="R4" pad="1"/>
 <contactref element="LCD" pad="3"/>
-<wire x1="21.2725" y1="30.0355" x2="21.6535" y2="30.0355" width="0.254" layer="1"/>
 <wire x1="21.2725" y1="30.0355" x2="21.082" y2="30.226" width="0.254" layer="1"/>
 <wire x1="21.082" y1="30.226" x2="21.082" y2="30.813" width="0.254" layer="1"/>
 <wire x1="21.082" y1="30.813" x2="21.094" y2="30.825" width="0.254" layer="1"/>
-<wire x1="24.892" y1="26.797" x2="26.355" y2="26.797" width="0.254" layer="1"/>
-<wire x1="21.6535" y1="30.0355" x2="24.892" y2="26.797" width="0.254" layer="1"/>
+<wire x1="33.6575" y1="30.0355" x2="21.2725" y2="30.0355" width="0.254" layer="1"/>
+<wire x1="33.6575" y1="30.0355" x2="35.118" y2="28.575" width="0.254" layer="1"/>
 </signal>
 <signal name="LCD_BIAS_P" class="1">
 <contactref element="LCD" pad="20"/>
@@ -6892,9 +6888,9 @@ Please make sure your boards conform to these design rules.
 <wire x1="16.51" y1="25.4" x2="12.594" y2="29.316" width="0.254" layer="1"/>
 <contactref element="Q8" pad="3"/>
 <wire x1="45.974" y1="20.708" x2="44.704" y2="20.708" width="0.254" layer="1"/>
-<wire x1="44.704" y1="20.708" x2="43.441" y2="21.971" width="0.254" layer="1"/>
-<wire x1="43.441" y1="21.971" x2="27.686" y2="21.971" width="0.254" layer="1"/>
-<wire x1="27.686" y1="21.971" x2="24.257" y2="25.4" width="0.254" layer="1"/>
+<wire x1="44.704" y1="20.708" x2="43.6315" y2="21.7805" width="0.254" layer="1"/>
+<wire x1="43.6315" y1="21.7805" x2="27.8765" y2="21.7805" width="0.254" layer="1"/>
+<wire x1="27.8765" y1="21.7805" x2="24.257" y2="25.4" width="0.254" layer="1"/>
 </signal>
 <signal name="LCD_BIAS_N">
 <contactref element="LCD" pad="19"/>
@@ -7156,8 +7152,8 @@ Please make sure your boards conform to these design rules.
 <wire x1="58.251" y1="9.61" x2="58.674" y2="10.033" width="0.3048" layer="1"/>
 <wire x1="58.674" y1="10.033" x2="59.629" y2="10.988" width="0.3048" layer="1"/>
 <wire x1="59.629" y1="10.988" x2="59.629" y2="11.049" width="0.3048" layer="1"/>
-<via x="52.705" y="18.288" extent="1-16" drill="0.3" grouprefs="EL_BACKLIGHT"/>
-<wire x1="54.144" y1="18.288" x2="52.705" y2="18.288" width="0.3048" layer="1" grouprefs="EL_BACKLIGHT"/>
+<via x="38.989" y="25.2095" extent="1-16" drill="0.3" grouprefs="EL_BACKLIGHT"/>
+<wire x1="38.989" y1="23.834" x2="38.989" y2="25.2095" width="0.3048" layer="1" grouprefs="EL_BACKLIGHT"/>
 <via x="18.288" y="50.165" extent="1-16" drill="0.3"/>
 <wire x1="18.3" y1="49.125" x2="18.3" y2="50.153" width="0.254" layer="16"/>
 <wire x1="18.3" y1="50.153" x2="18.288" y2="50.165" width="0.254" layer="16"/>
@@ -7177,71 +7173,81 @@ Please make sure your boards conform to these design rules.
 <contactref element="U5" pad="11"/>
 <contactref element="U5" pad="7"/>
 <contactref element="C8" pad="1"/>
-<wire x1="39.7891" y1="18.9128" x2="39.7891" y2="17.1384" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="39.7891" y1="17.1384" x2="39.8145" y2="17.113" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="39.8145" y1="17.113" x2="39.8145" y2="13.462" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="39.8145" y1="13.462" x2="40.4495" y2="12.827" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="40.4495" y1="12.827" x2="40.4495" y2="11.843" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
+<wire x1="39.7891" y1="18.9128" x2="39.7891" y2="17.1384" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="39.7891" y1="17.1384" x2="39.8145" y2="17.113" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="39.8145" y1="17.113" x2="39.8145" y2="13.462" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="39.8145" y1="13.462" x2="40.4495" y2="12.827" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="40.4495" y1="12.827" x2="40.4495" y2="11.843" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
 <contactref element="U6" pad="11"/>
 <contactref element="C25" pad="1"/>
 <wire x1="32.2834" y1="4.0107" x2="32.2834" y2="5.7851" width="0.254" layer="1" grouprefs="LCD_BIAS_N"/>
 <wire x1="32.2834" y1="5.7851" x2="32.258" y2="5.8105" width="0.254" layer="1" grouprefs="LCD_BIAS_N"/>
+<wire x1="38.989" y1="23.834" x2="39.7891" y2="18.9128" width="0" layer="19" extent="1-1"/>
 <wire x1="32.258" y1="5.8105" x2="40.4495" y2="11.843" width="0" layer="19" extent="1-1"/>
-<wire x1="52.705" y1="18.288" x2="39.7891" y2="18.9128" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="D7" pad="1"/>
 <contactref element="L3" pad="2"/>
 <contactref element="U2" pad="4"/>
-<wire x1="45.72" y1="27.789" x2="45.805" y2="27.874" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="45.805" y1="27.874" x2="49.142" y2="27.874" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="54.144" y1="22.872" x2="54.144" y2="22.098" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="54.5762125" y1="24.9095" x2="54.7885" y2="24.6972125" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="54.7885" y1="24.6972125" x2="54.7885" y2="23.0597875" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="54.7885" y1="23.0597875" x2="54.7032125" y2="22.9745" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="49.142" y1="27.874" x2="52.1065" y2="24.9095" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="54.7032125" y1="22.9745" x2="54.2465" y2="22.9745" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="54.2465" y1="22.9745" x2="54.144" y2="22.872" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="52.1065" y1="24.9095" x2="54.5762125" y2="24.9095" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
+<wire x1="46.204" y1="32.0675" x2="46.543" y2="31.7285" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
+<wire x1="42.799" y1="23.834" x2="43.6404" y2="24.6754" width="0.1524" layer="1"/>
+<wire x1="43.6404" y1="24.6754" x2="45.3876875" y2="24.6754" width="0.1524" layer="1"/>
+<wire x1="46.204" y1="32.0675" x2="46.602" y2="31.6695" width="0.254" layer="1"/>
+<wire x1="46.602" y1="31.6695" x2="46.602" y2="29.271" width="0.254" layer="1"/>
+<wire x1="46.602" y1="29.2404" x2="46.602" y2="29.271" width="0.254" layer="1"/>
+<wire x1="45.40873125" y1="24.6246" x2="45.6064" y2="24.82226875" width="0.254" layer="1"/>
+<wire x1="43.5896" y1="24.6246" x2="42.799" y2="23.834" width="0.254" layer="1"/>
+<wire x1="45.40873125" y1="24.6246" x2="43.5896" y2="24.6246" width="0.254" layer="1"/>
+<wire x1="45.6064" y1="28.2448" x2="46.602" y2="29.2404" width="0.254" layer="1"/>
+<wire x1="45.6064" y1="24.82226875" x2="45.6064" y2="28.2448" width="0.254" layer="1"/>
 </signal>
 <signal name="N$3">
 <contactref element="D7" pad="3"/>
 <contactref element="U2" pad="3"/>
 <contactref element="C15" pad="1"/>
-<wire x1="51.442" y1="26.924" x2="52.524" y2="25.842" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="52.524" y1="25.842" x2="53.721" y2="25.842" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="55.475" y1="21.736725" x2="55.155275" y2="21.417" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="54.2471" y1="25.3159" x2="54.78175" y2="25.3159" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="55.155275" y1="21.417" x2="54.733" y2="21.417" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="54.733" y1="21.417" x2="54.144" y2="20.828" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="54.78175" y1="25.3159" x2="55.475" y2="24.62265" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="55.475" y1="24.62265" x2="55.475" y2="21.736725" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="53.721" y1="25.842" x2="54.2471" y2="25.3159" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
+<wire x1="41.929725" y1="22.63" x2="41.5465" y2="23.013225" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
+<wire x1="41.5465" y1="23.013225" x2="41.5465" y2="23.8165" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
+<wire x1="41.5465" y1="23.8165" x2="41.529" y2="23.834" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
+<wire x1="41.929725" y1="22.63" x2="44.18065" y2="22.63" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
+<wire x1="46.543" y1="25.654" x2="46.0169" y2="25.1279" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
+<wire x1="44.18065" y1="22.63" x2="46.543" y2="24.99235" width="0.254" layer="1"/>
+<wire x1="46.543" y1="24.99235" x2="46.543" y2="25.654" width="0.254" layer="1"/>
+<wire x1="46.543" y1="25.654" x2="46.543" y2="25.962" width="0.254" layer="1"/>
+<wire x1="46.543" y1="25.962" x2="48.902" y2="28.321" width="0.254" layer="1"/>
 </signal>
 <signal name="N$33">
 <contactref element="U2" pad="2"/>
-<wire x1="55.155275" y1="18.969" x2="55.475" y2="18.649275" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="54.144" y1="19.558" x2="54.733" y2="18.969" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="54.733" y1="18.969" x2="55.155275" y2="18.969" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="55.475" y1="18.649275" x2="55.475" y2="17.69" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="55.475" y1="17.69" x2="53.975" y2="16.19" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
+<wire x1="37.018" y1="24.003" x2="37.145" y2="24.003" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
 <contactref element="R15" pad="1"/>
+<wire x1="36.8935" y1="24.0665" x2="36.957" y2="24.003" width="0.1524" layer="1"/>
+<wire x1="37.018" y1="24.003" x2="36.957" y2="24.003" width="0.1524" layer="1"/>
+<wire x1="40.259" y1="23.834" x2="40.259" y2="24.892" width="0.254" layer="1"/>
+<wire x1="39.4359" y1="25.7151" x2="38.5421" y2="25.7151" width="0.254" layer="1"/>
+<wire x1="38.5421" y1="25.7151" x2="36.8935" y2="24.0665" width="0.254" layer="1"/>
+<wire x1="40.259" y1="24.892" x2="39.4359" y2="25.7151" width="0.254" layer="1"/>
 </signal>
 <signal name="N$34">
 <contactref element="U2" pad="8"/>
-<wire x1="49.234" y1="18.288" x2="51.332" y2="16.19" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="51.332" y1="16.19" x2="51.689" y2="16.19" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
+<wire x1="38.989" y1="27.728" x2="37.55" y2="26.289" width="0.254" layer="1"/>
+<wire x1="37.018" y1="26.289" x2="37.55" y2="26.289" width="0.254" layer="1"/>
+<wire x1="38.989" y1="28.744" x2="38.989" y2="27.728" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
 <contactref element="R16" pad="1"/>
 </signal>
 <signal name="LCD_EL_EN">
-<wire x1="51.689" y1="14.29" x2="53.975" y2="14.29" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
+<wire x1="35.118" y1="26.289" x2="35.118" y2="24.003" width="0.254" layer="1"/>
 <wire x1="59.1584" y1="1.651" x2="58.251" y2="1.651" width="0.1524" layer="1"/>
 <wire x1="59.69" y1="2.1826" x2="59.1584" y2="1.651" width="0.1524" layer="1"/>
-<wire x1="59.69" y1="6.91243125" x2="59.69" y2="2.1826" width="0.1524" layer="1"/>
 <contactref element="R15" pad="2"/>
 <contactref element="U7" pad="7"/>
 <contactref element="R16" pad="2"/>
-<wire x1="59.69" y1="6.91243125" x2="53.975" y2="14.29" width="0" layer="19" extent="1-1"/>
+<wire x1="35.118" y1="24.003" x2="36.896" y2="22.225" width="0.1524" layer="1"/>
+<wire x1="36.896" y1="22.225" x2="49.149" y2="22.225" width="0.1524" layer="1"/>
+<wire x1="49.149" y1="22.225" x2="57.023" y2="14.351" width="0.1524" layer="1"/>
+<wire x1="57.023" y1="8.96964375" x2="57.35664375" y2="8.636" width="0.1524" layer="1"/>
+<wire x1="57.35664375" y1="8.636" x2="59.182" y2="8.636" width="0.1524" layer="1"/>
+<wire x1="59.182" y1="8.636" x2="59.69" y2="8.128" width="0.1524" layer="1"/>
+<wire x1="57.023" y1="14.351" x2="57.023" y2="8.96964375" width="0.1524" layer="1"/>
+<wire x1="59.69" y1="8.128" x2="59.69" y2="2.1826" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$35">
 <contactref element="LCD" pad="6"/>
@@ -7407,11 +7413,7 @@ Please make sure your boards conform to these design rules.
 </polygon>
 <contactref element="L3" pad="1"/>
 <contactref element="C16" pad="1"/>
-<wire x1="45.72" y1="24.789" x2="46.633" y2="23.876" width="0.254" layer="1" grouprefs="EL_BACKLIGHT"/>
-<via x="47.879" y="23.114" extent="1-16" drill="0.6" grouprefs="EL_BACKLIGHT"/>
-<wire x1="46.633" y1="23.876" x2="47.879" y2="23.876" width="0.6096" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="47.879" y1="23.876" x2="49.215" y2="23.876" width="0.6096" layer="1" grouprefs="EL_BACKLIGHT"/>
-<wire x1="47.879" y1="23.114" x2="47.879" y2="23.876" width="0.6096" layer="1" grouprefs="EL_BACKLIGHT"/>
+<via x="47.879" y="23.114" extent="1-16" drill="0.6"/>
 <contactref element="D1" pad="A"/>
 <contactref element="U3" pad="7"/>
 <via x="15.367" y="5.461" extent="1-16" drill="0.3" grouprefs="KBD_USB"/>
@@ -7529,13 +7531,13 @@ Please make sure your boards conform to these design rules.
 <contactref element="L2" pad="P$1"/>
 <contactref element="C11" pad="P"/>
 <contactref element="R28" pad="2"/>
-<wire x1="39.227" y1="14.478" x2="39.227" y2="13.3358" width="0.254" layer="16" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="39.227" y1="13.3358" x2="40.6908" y2="11.872" width="0.254" layer="16" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<via x="41.783" y="6.35" extent="1-16" drill="0.35" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="41.402" y1="7.9756" x2="41.783" y2="7.5946" width="0.254" layer="1" grouprefs="LCD_BIAS_P2"/>
-<wire x1="41.783" y1="7.5946" x2="41.783" y2="6.35" width="0.254" layer="1" grouprefs="LCD_BIAS_P2"/>
-<wire x1="40.6908" y1="11.872" x2="41.783" y2="10.7798" width="0.254" layer="16" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="41.783" y1="10.7798" x2="41.783" y2="6.35" width="0.254" layer="16" grouprefs="LCD_BIAS_P2"/>
+<wire x1="39.227" y1="14.478" x2="39.227" y2="13.3358" width="0.254" layer="16" grouprefs="LCD_BIAS_P"/>
+<wire x1="39.227" y1="13.3358" x2="40.6908" y2="11.872" width="0.254" layer="16" grouprefs="LCD_BIAS_P"/>
+<via x="41.783" y="6.35" extent="1-16" drill="0.35" grouprefs="LCD_BIAS_P"/>
+<wire x1="41.402" y1="7.9756" x2="41.783" y2="7.5946" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="41.783" y1="7.5946" x2="41.783" y2="6.35" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="40.6908" y1="11.872" x2="41.783" y2="10.7798" width="0.254" layer="16" grouprefs="LCD_BIAS_P"/>
+<wire x1="41.783" y1="10.7798" x2="41.783" y2="6.35" width="0.254" layer="16" grouprefs="LCD_BIAS_P"/>
 <contactref element="L5" pad="P$1"/>
 <contactref element="C28" pad="P"/>
 <contactref element="R30" pad="2"/>
@@ -7556,6 +7558,10 @@ Please make sure your boards conform to these design rules.
 <wire x1="39.10313125" y1="14.478" x2="33.07063125" y2="8.4455" width="0.254" layer="16"/>
 <wire x1="33.07063125" y1="8.4455" x2="32.8455" y2="8.4455" width="0.254" layer="16"/>
 <wire x1="39.227" y1="14.478" x2="39.10313125" y2="14.478" width="0.254" layer="16"/>
+<wire x1="43.204" y1="32.0675" x2="42.6085" y2="32.0675" width="0.254" layer="1"/>
+<wire x1="42.6085" y1="32.0675" x2="40.386" y2="34.29" width="0.254" layer="1"/>
+<wire x1="43.204" y1="32.0675" x2="44.577" y2="30.6945" width="0.254" layer="1"/>
+<wire x1="44.577" y1="30.6945" x2="44.577" y2="29.271" width="0.254" layer="1"/>
 </signal>
 <signal name="USBC_ID">
 <contactref element="U$4" pad="P$9"/>
@@ -7584,33 +7590,33 @@ Please make sure your boards conform to these design rules.
 <contactref element="U5" pad="16"/>
 <contactref element="Q3" pad="1"/>
 <contactref element="U5" pad="15"/>
-<wire x1="37.2745" y1="17.113" x2="36.6395" y2="17.113" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="37.2745" y1="17.113" x2="37.2745" y2="18.415" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<via x="37.2745" y="18.415" extent="1-16" drill="0.35" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="37.2745" y1="18.415" x2="37.2745" y2="19.4125" width="0.1524" layer="16" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="37.2745" y1="19.4125" x2="37.277" y2="19.415" width="0.1524" layer="16" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
+<wire x1="37.2745" y1="17.113" x2="36.6395" y2="17.113" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="37.2745" y1="17.113" x2="37.2745" y2="18.415" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<via x="37.2745" y="18.415" extent="1-16" drill="0.35" grouprefs="LCD_BIAS_P"/>
+<wire x1="37.2745" y1="18.415" x2="37.2745" y2="19.4125" width="0.1524" layer="16" grouprefs="LCD_BIAS_P"/>
+<wire x1="37.2745" y1="19.4125" x2="37.277" y2="19.415" width="0.1524" layer="16" grouprefs="LCD_BIAS_P"/>
 </signal>
 <signal name="N$17">
 <contactref element="L2" pad="P$2"/>
 <contactref element="U5" pad="14"/>
 <contactref element="D4" pad="A"/>
 <contactref element="Q3" pad="3"/>
-<via x="37.9095" y="15.6845" extent="1-16" drill="0.35" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="38.227" y1="17.315" x2="38.227" y2="16.002" width="0.1524" layer="16" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="38.227" y1="16.002" x2="37.9095" y2="15.6845" width="0.1524" layer="16" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="36.973" y1="14.478" x2="36.973" y2="14.748" width="0.1524" layer="16" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="36.973" y1="14.748" x2="37.9095" y2="15.6845" width="0.1524" layer="16" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="37.9095" y1="17.113" x2="37.9095" y2="15.6845" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="38.227" y1="17.315" x2="41.904" y2="17.315" width="0.1524" layer="16" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="41.904" y1="17.315" x2="41.91" y2="17.321" width="0.1524" layer="16" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
+<via x="37.9095" y="15.6845" extent="1-16" drill="0.35" grouprefs="LCD_BIAS_P"/>
+<wire x1="38.227" y1="17.315" x2="38.227" y2="16.002" width="0.1524" layer="16" grouprefs="LCD_BIAS_P"/>
+<wire x1="38.227" y1="16.002" x2="37.9095" y2="15.6845" width="0.1524" layer="16" grouprefs="LCD_BIAS_P"/>
+<wire x1="36.973" y1="14.478" x2="36.973" y2="14.748" width="0.1524" layer="16" grouprefs="LCD_BIAS_P"/>
+<wire x1="36.973" y1="14.748" x2="37.9095" y2="15.6845" width="0.1524" layer="16" grouprefs="LCD_BIAS_P"/>
+<wire x1="37.9095" y1="17.113" x2="37.9095" y2="15.6845" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="38.227" y1="17.315" x2="41.904" y2="17.315" width="0.1524" layer="16" grouprefs="LCD_BIAS_P"/>
+<wire x1="41.904" y1="17.315" x2="41.91" y2="17.321" width="0.1524" layer="16" grouprefs="LCD_BIAS_P"/>
 </signal>
 <signal name="N$25">
 <contactref element="U5" pad="10"/>
 <contactref element="R11" pad="1"/>
-<wire x1="42.799" y1="14.417" x2="41.1262" y2="16.0898" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="41.1262" y1="16.0898" x2="40.82535625" y2="16.0898" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="40.82535625" y1="16.0898" x2="40.4495" y2="16.46565625" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="40.4495" y1="16.46565625" x2="40.4495" y2="17.113" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
+<wire x1="42.799" y1="14.417" x2="41.1262" y2="16.0898" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="41.1262" y1="16.0898" x2="40.82535625" y2="16.0898" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="40.82535625" y1="16.0898" x2="40.4495" y2="16.46565625" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="40.4495" y1="16.46565625" x2="40.4495" y2="17.113" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
 </signal>
 <signal name="N$26">
 <contactref element="R13" pad="2"/>
@@ -7618,18 +7624,18 @@ Please make sure your boards conform to these design rules.
 <contactref element="R12" pad="1"/>
 <contactref element="U5" pad="9"/>
 <contactref element="C10" pad="1"/>
-<wire x1="46.736" y1="16.317" x2="44.8056" y2="16.317" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="44.8056" y1="16.317" x2="44.7802" y2="16.3424" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="45.5522" y1="17.8142125" x2="45.5522" y2="19.0017875" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="45.5522" y1="19.0017875" x2="45.2427875" y2="19.3112" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="45.2427875" y1="19.3112" x2="44.8052125" y2="19.3112" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="44.8052125" y1="19.3112" x2="43.9750125" y2="18.481" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="43.9750125" y1="18.481" x2="42.799" y2="18.481" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="44.7802" y1="17.0422125" x2="45.5522" y2="17.8142125" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="44.7802" y1="16.3424" x2="44.7802" y2="17.0422125" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="41.0845" y1="17.113" x2="41.8805" y2="16.317" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="41.8805" y1="16.317" x2="42.799" y2="16.317" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="42.799" y1="16.317" x2="42.799" y2="18.481" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
+<wire x1="46.736" y1="16.317" x2="44.8056" y2="16.317" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="44.8056" y1="16.317" x2="44.7802" y2="16.3424" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="45.5522" y1="17.8142125" x2="45.5522" y2="19.0017875" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="45.5522" y1="19.0017875" x2="45.2427875" y2="19.3112" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="45.2427875" y1="19.3112" x2="44.8052125" y2="19.3112" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="44.8052125" y1="19.3112" x2="43.9750125" y2="18.481" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="43.9750125" y1="18.481" x2="42.799" y2="18.481" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="44.7802" y1="17.0422125" x2="45.5522" y2="17.8142125" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="44.7802" y1="16.3424" x2="44.7802" y2="17.0422125" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="41.0845" y1="17.113" x2="41.8805" y2="16.317" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="41.8805" y1="16.317" x2="42.799" y2="16.317" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="42.799" y1="16.317" x2="42.799" y2="18.481" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
 </signal>
 <signal name="N$27">
 <contactref element="R13" pad="1"/>
@@ -7638,33 +7644,33 @@ Please make sure your boards conform to these design rules.
 <contactref element="D4" pad="K"/>
 <contactref element="C12" pad="P"/>
 <contactref element="C10" pad="2"/>
-<wire x1="46.924" y1="18.408" x2="46.924" y2="17.8882125" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="46.924" y1="17.8882125" x2="47.74" y2="17.0722125" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="47.74" y1="17.0722125" x2="47.74" y2="15.421" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="47.74" y1="15.421" x2="46.736" y2="14.417" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="46.736" y1="14.417" x2="44.8056" y2="14.417" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="44.8056" y1="14.417" x2="44.7802" y2="14.4424" width="0.254" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<via x="44.323" y="13.335" extent="1-16" drill="0.35" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="44.7802" y1="14.4424" x2="44.7802" y2="13.7922" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="44.7802" y1="13.7922" x2="44.323" y2="13.335" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="44.831" y1="12.253" x2="44.831" y2="12.827" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="44.831" y1="12.827" x2="44.323" y2="13.335" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="44.323" y1="13.335" x2="42.496" y2="13.335" width="0.1524" layer="16" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="42.496" y1="13.335" x2="41.91" y2="13.921" width="0.1524" layer="16" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="44.831" y1="12.253" x2="45.847" y2="11.237" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="45.847" y1="11.237" x2="45.847" y2="8.7376" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2"/>
-<wire x1="45.847" y1="8.7376" x2="45.085" y2="7.9756" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
+<wire x1="46.924" y1="18.408" x2="46.924" y2="17.8882125" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="46.924" y1="17.8882125" x2="47.74" y2="17.0722125" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="47.74" y1="17.0722125" x2="47.74" y2="15.421" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="47.74" y1="15.421" x2="46.736" y2="14.417" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="46.736" y1="14.417" x2="44.8056" y2="14.417" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="44.8056" y1="14.417" x2="44.7802" y2="14.4424" width="0.254" layer="1" grouprefs="LCD_BIAS_P"/>
+<via x="44.323" y="13.335" extent="1-16" drill="0.35" grouprefs="LCD_BIAS_P"/>
+<wire x1="44.7802" y1="14.4424" x2="44.7802" y2="13.7922" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="44.7802" y1="13.7922" x2="44.323" y2="13.335" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="44.831" y1="12.253" x2="44.831" y2="12.827" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="44.831" y1="12.827" x2="44.323" y2="13.335" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="44.323" y1="13.335" x2="42.496" y2="13.335" width="0.1524" layer="16" grouprefs="LCD_BIAS_P"/>
+<wire x1="42.496" y1="13.335" x2="41.91" y2="13.921" width="0.1524" layer="16" grouprefs="LCD_BIAS_P"/>
+<wire x1="44.831" y1="12.253" x2="45.847" y2="11.237" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="45.847" y1="11.237" x2="45.847" y2="8.7376" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="45.847" y1="8.7376" x2="45.085" y2="7.9756" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
 </signal>
 <signal name="N$28">
 <contactref element="R14" pad="2"/>
 <contactref element="R27" pad="1"/>
 <contactref element="Q8" pad="1"/>
-<wire x1="45.024" y1="18.408" x2="45.024" y2="18.27356875" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="43.827" y1="13.281" x2="42.799" y2="12.253" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="45.024" y1="18.27356875" x2="43.827" y2="17.07656875" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="43.827" y1="17.07656875" x2="43.827" y2="13.281" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="42.799" y1="12.253" x2="44.699" y2="10.353" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="44.699" y1="10.353" x2="44.831" y2="10.353" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
+<wire x1="45.024" y1="18.408" x2="45.024" y2="18.27356875" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="43.827" y1="13.281" x2="42.799" y2="12.253" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="45.024" y1="18.27356875" x2="43.827" y2="17.07656875" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="43.827" y1="17.07656875" x2="43.827" y2="13.281" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="42.799" y1="12.253" x2="44.699" y2="10.353" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="44.699" y1="10.353" x2="44.831" y2="10.353" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
 </signal>
 <signal name="N$32">
 <contactref element="U5" pad="8"/>
@@ -7676,27 +7682,27 @@ Please make sure your boards conform to these design rules.
 <contactref element="D5" pad="K"/>
 <contactref element="R28" pad="1"/>
 <contactref element="U5" pad="3"/>
-<wire x1="38.4302" y1="8.6378" x2="39.7644" y2="9.972" width="0.1524" layer="16" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="39.7644" y1="9.972" x2="40.6908" y2="9.972" width="0.1524" layer="16" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<via x="37.719" y="10.6045" extent="1-16" drill="0.35" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="37.9095" y1="11.843" x2="37.9095" y2="10.795" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="37.9095" y1="10.795" x2="37.719" y2="10.6045" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="38.4302" y1="8.6378" x2="37.719" y2="9.349" width="0.1524" layer="16" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="37.719" y1="9.349" x2="37.719" y2="10.6045" width="0.1524" layer="16" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
+<wire x1="38.4302" y1="8.6378" x2="39.7644" y2="9.972" width="0.1524" layer="16" grouprefs="LCD_BIAS_P"/>
+<wire x1="39.7644" y1="9.972" x2="40.6908" y2="9.972" width="0.1524" layer="16" grouprefs="LCD_BIAS_P"/>
+<via x="37.719" y="10.6045" extent="1-16" drill="0.35" grouprefs="LCD_BIAS_P"/>
+<wire x1="37.9095" y1="11.843" x2="37.9095" y2="10.795" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="37.9095" y1="10.795" x2="37.719" y2="10.6045" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="38.4302" y1="8.6378" x2="37.719" y2="9.349" width="0.1524" layer="16" grouprefs="LCD_BIAS_P"/>
+<wire x1="37.719" y1="9.349" x2="37.719" y2="10.6045" width="0.1524" layer="16" grouprefs="LCD_BIAS_P"/>
 </signal>
 <signal name="N$46">
 <contactref element="D5" pad="A"/>
 <contactref element="U5" pad="6"/>
 <contactref element="C9" pad="1"/>
-<wire x1="38.4302" y1="12.0378" x2="38.4302" y2="10.9728" width="0.1524" layer="16" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="38.4302" y1="10.9728" x2="38.7985" y2="10.6045" width="0.1524" layer="16" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<via x="38.7985" y="10.6045" extent="1-16" drill="0.35" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="38.796" y1="9.4615" x2="38.796" y2="10.59591875" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2"/>
-<wire x1="38.796" y1="10.59591875" x2="38.7985" y2="10.602" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2"/>
-<wire x1="38.7985" y1="10.602" x2="39.4625" y2="10.602" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2"/>
-<wire x1="38.796" y1="9.967" x2="38.7985" y2="9.967" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
-<wire x1="39.8145" y1="11.843" x2="39.8145" y2="10.954" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2"/>
-<wire x1="39.4625" y1="10.602" x2="39.8145" y2="10.954" width="0.1524" layer="1" grouprefs="LCD_BIAS_P2 LCD_BIAS_P"/>
+<wire x1="38.4302" y1="12.0378" x2="38.4302" y2="10.9728" width="0.1524" layer="16" grouprefs="LCD_BIAS_P"/>
+<wire x1="38.4302" y1="10.9728" x2="38.7985" y2="10.6045" width="0.1524" layer="16" grouprefs="LCD_BIAS_P"/>
+<via x="38.7985" y="10.6045" extent="1-16" drill="0.35" grouprefs="LCD_BIAS_P"/>
+<wire x1="38.796" y1="9.4615" x2="38.796" y2="10.59591875" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="38.796" y1="10.59591875" x2="38.7985" y2="10.602" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="38.7985" y1="10.602" x2="39.4625" y2="10.602" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="38.796" y1="9.967" x2="38.7985" y2="9.967" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="39.8145" y1="11.843" x2="39.8145" y2="10.954" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
+<wire x1="39.4625" y1="10.602" x2="39.8145" y2="10.954" width="0.1524" layer="1" grouprefs="LCD_BIAS_P"/>
 <wire x1="38.796" y1="9.967" x2="38.7985" y2="10.6045" width="0" layer="19" extent="1-1"/>
 <wire x1="38.796" y1="9.4615" x2="38.796" y2="9.967" width="0" layer="19" extent="1-1"/>
 </signal>
