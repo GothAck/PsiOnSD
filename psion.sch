@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="mil" style="lines" multiple="1" display="no" altdistance="50" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -25510,33 +25510,18 @@ High-power, low thermal resistance package.</description>
 <clearance class="0" value="0.0889"/>
 </class>
 <class number="1" name="data" width="0.1524" drill="0.2794">
-<clearance class="0" value="0.1778"/>
 <clearance class="1" value="0.0889"/>
 </class>
 <class number="2" name="power" width="0.254" drill="0.2794">
-<clearance class="0" value="0.1524"/>
-<clearance class="1" value="0.1524"/>
 <clearance class="2" value="0.1524"/>
 </class>
 <class number="3" name="data_usb" width="0.1524" drill="0.2794">
-<clearance class="0" value="0.1778"/>
-<clearance class="1" value="0.1778"/>
-<clearance class="2" value="0.1778"/>
 <clearance class="3" value="0.0889"/>
 </class>
 <class number="4" name="data_lcd" width="0.1524" drill="0.2794">
-<clearance class="0" value="0.1778"/>
-<clearance class="1" value="0.1778"/>
-<clearance class="2" value="0.1778"/>
-<clearance class="3" value="0.1778"/>
 <clearance class="4" value="0.0889"/>
 </class>
 <class number="5" name="data_lowspeed" width="0.1524" drill="0.2794">
-<clearance class="0" value="0.1778"/>
-<clearance class="1" value="0.1778"/>
-<clearance class="2" value="0.1778"/>
-<clearance class="3" value="0.1778"/>
-<clearance class="4" value="0.1778"/>
 <clearance class="5" value="0.0889"/>
 </class>
 </classes>
@@ -26164,7 +26149,7 @@ w/2A current</text>
 <wire x1="254" y1="215.9" x2="251.46" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VIN_AC" class="0">
+<net name="VIN_AC" class="2">
 <segment>
 <pinref part="U4" gate="A" pin="VIN_AC@1"/>
 <wire x1="78.74" y1="281.94" x2="76.2" y2="281.94" width="0.1524" layer="91"/>
@@ -26178,7 +26163,7 @@ w/2A current</text>
 <label x="73.66" y="281.94" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
-<net name="VIN_USB" class="0">
+<net name="VIN_USB" class="2">
 <segment>
 <pinref part="U4" gate="A" pin="VIN_USB@1"/>
 <wire x1="78.74" y1="266.7" x2="76.2" y2="266.7" width="0.1524" layer="91"/>
@@ -26216,7 +26201,7 @@ w/2A current</text>
 <label x="35.56" y="187.96" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="IOD_VCC33" class="0">
+<net name="IOD_VCC33" class="2">
 <segment>
 <pinref part="U4" gate="A" pin="SYS_VDD3_3P3V@1"/>
 <wire x1="149.86" y1="190.5" x2="152.4" y2="190.5" width="0.1524" layer="91"/>
@@ -26376,7 +26361,7 @@ w/2A current</text>
 <wire x1="78.74" y1="91.44" x2="76.2" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="SYS_RTC_1P8V" class="0">
+<net name="SYS_RTC_1P8V" class="2">
 <segment>
 <pinref part="U4" gate="A" pin="SYS_RTC_1P8V@4"/>
 <wire x1="149.86" y1="83.82" x2="152.4" y2="83.82" width="0.1524" layer="91"/>
@@ -26465,7 +26450,7 @@ w/2A current</text>
 <wire x1="314.96" y1="132.08" x2="327.66" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="VCC18" class="0">
+<net name="VCC18" class="2">
 <segment>
 <pinref part="U4" gate="A" pin="SYS_VDD_1P8V@10"/>
 <wire x1="149.86" y1="116.84" x2="152.4" y2="116.84" width="0.1524" layer="91"/>
@@ -26839,7 +26824,7 @@ w/2A current</text>
 <label x="73.66" y="198.12" size="1.778" layer="95" rot="MR0"/>
 </segment>
 </net>
-<net name="N$36" class="0">
+<net name="USBC_IND_SW" class="2">
 <segment>
 <pinref part="U8" gate="G$1" pin="SW"/>
 <pinref part="L4" gate="G$1" pin="2"/>
@@ -26906,7 +26891,7 @@ w/2A current</text>
 <junction x="274.32" y="60.96"/>
 </segment>
 </net>
-<net name="N$41" class="0">
+<net name="USBC_VBUS_SW" class="2">
 <segment>
 <pinref part="Q5" gate="G$1" pin="S"/>
 <pinref part="Q6" gate="G$1" pin="S"/>
@@ -27079,9 +27064,9 @@ w/2A current</text>
 <attribute name="NAME" x="231.14" y="117.84" size="2.0828" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="231.14" y="72.2" size="2.0828" layer="96" ratio="10" rot="SR0"/>
 </instance>
-<instance part="R4" gate="G$1" x="220.98" y="91.44" smashed="yes">
-<attribute name="NAME" x="217.17" y="92.9386" size="1.778" layer="95"/>
-<attribute name="VALUE" x="217.17" y="88.138" size="1.778" layer="96"/>
+<instance part="R4" gate="G$1" x="218.44" y="91.44" smashed="yes">
+<attribute name="NAME" x="214.63" y="92.9386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="214.63" y="88.138" size="1.778" layer="96"/>
 </instance>
 <instance part="U7" gate="G$1" x="218.44" y="27.94" smashed="yes">
 <attribute name="NAME" x="205.74" y="44.18" size="2.0828" layer="95" ratio="10" rot="SR0"/>
@@ -27227,8 +27212,8 @@ w/2A current</text>
 <attribute name="VALUE" x="86.36" y="87.44" size="2.0828" layer="96" ratio="10" rot="SR0"/>
 </instance>
 <instance part="L2" gate="G$1" x="119.38" y="137.16" smashed="yes">
-<attribute name="NAME" x="115.57" y="140.97" size="1.778" layer="95"/>
-<attribute name="VALUE" x="115.57" y="134.62" size="1.778" layer="96"/>
+<attribute name="NAME" x="115.57" y="139.7" size="1.778" layer="95"/>
+<attribute name="VALUE" x="115.57" y="142.24" size="1.778" layer="96"/>
 </instance>
 <instance part="D4" gate="G$1" x="137.16" y="137.16" smashed="yes">
 <attribute name="NAME" x="134.62" y="139.065" size="1.778" layer="95"/>
@@ -27284,7 +27269,7 @@ w/2A current</text>
 </instance>
 <instance part="D5" gate="G$1" x="76.2" y="124.46" smashed="yes" rot="R90">
 <attribute name="NAME" x="74.295" y="121.92" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="80.01" y="121.92" size="1.778" layer="96" rot="R90"/>
+<attribute name="VALUE" x="72.39" y="121.92" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R28" gate="G$1" x="81.28" y="132.08" smashed="yes" rot="R90">
 <attribute name="NAME" x="79.7814" y="128.27" size="1.778" layer="95" rot="R90"/>
@@ -27447,8 +27432,8 @@ w/2A current</text>
 </bus>
 <bus name="LCD_EL:EL_VA,EL_VB,GND">
 <segment>
-<wire x1="220.98" y1="83.82" x2="215.9" y2="83.82" width="0.762" layer="92"/>
-<label x="215.9" y="81.28" size="1.778" layer="95" rot="MR180"/>
+<wire x1="218.44" y1="83.82" x2="213.36" y2="83.82" width="0.762" layer="92"/>
+<label x="218.44" y="81.28" size="1.778" layer="95" rot="MR180"/>
 </segment>
 <segment>
 <wire x1="22.86" y1="137.16" x2="22.86" y2="147.32" width="0.762" layer="92"/>
@@ -28448,7 +28433,7 @@ w/2A current</text>
 <junction x="55.88" y="165.1"/>
 </segment>
 </net>
-<net name="KBDAVR_VCC" class="0">
+<net name="KBDAVR_VCC" class="2">
 <segment>
 <pinref part="U3" gate="A" pin="AVCC"/>
 <wire x1="58.42" y1="246.38" x2="55.88" y2="246.38" width="0.1524" layer="91"/>
@@ -28542,34 +28527,35 @@ w/2A current</text>
 <wire x1="114.3" y1="238.76" x2="93.98" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="EL_VB" class="0">
+<net name="EL_VB" class="2">
 <segment>
 <pinref part="U2" gate="G$1" pin="VB"/>
-<wire x1="226.06" y1="86.36" x2="218.44" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="86.36" x2="218.44" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="226.06" y1="86.36" x2="215.9" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="86.36" x2="215.9" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LCD" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="144.78" x2="22.86" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="EL_VA_PRE" class="2">
 <segment>
 <pinref part="U2" gate="G$1" pin="VA"/>
 <pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="223.52" y1="91.44" x2="226.06" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="EL_VA" class="0">
+<net name="EL_VA" class="2">
 <segment>
 <pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="215.9" y1="91.44" x2="215.9" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="91.44" x2="213.36" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="LCD" gate="G$1" pin="3"/>
 <wire x1="20.32" y1="139.7" x2="22.86" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="LCD_BIAS_P" class="1">
+<net name="LCD_BIAS_P" class="2">
 <segment>
 <pinref part="LCD" gate="G$1" pin="20"/>
 <wire x1="20.32" y1="96.52" x2="27.94" y2="96.52" width="0.1524" layer="91"/>
@@ -28581,7 +28567,7 @@ w/2A current</text>
 <label x="177.8" y="109.22" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LCD_BIAS_N" class="0">
+<net name="LCD_BIAS_N" class="2">
 <segment>
 <pinref part="LCD" gate="G$1" pin="19"/>
 <wire x1="20.32" y1="99.06" x2="27.94" y2="99.06" width="0.1524" layer="91"/>
@@ -28603,7 +28589,7 @@ w/2A current</text>
 <junction x="134.62" y="66.04"/>
 </segment>
 </net>
-<net name="VCC256" class="0">
+<net name="VCC256" class="2">
 <segment>
 <pinref part="LCD" gate="G$1" pin="18"/>
 <wire x1="20.32" y1="101.6" x2="27.94" y2="101.6" width="0.1524" layer="91"/>
@@ -28618,7 +28604,7 @@ w/2A current</text>
 <junction x="365.76" y="109.22"/>
 </segment>
 </net>
-<net name="VCC132" class="0">
+<net name="VCC132" class="2">
 <segment>
 <pinref part="LCD" gate="G$1" pin="17"/>
 <wire x1="20.32" y1="104.14" x2="27.94" y2="104.14" width="0.1524" layer="91"/>
@@ -28635,62 +28621,62 @@ w/2A current</text>
 </net>
 <net name="LCD_BIASN_SHDN_" class="0">
 <segment>
-<pinref part="U7" gate="G$1" pin="PA5"/>
-<wire x1="236.22" y1="33.02" x2="238.76" y2="33.02" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U6" gate="G$1" pin="SHDN_"/>
 <wire x1="81.28" y1="38.1" x2="73.66" y2="38.1" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="LCD_BIASN_DN" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="PA6"/>
-<wire x1="236.22" y1="30.48" x2="238.76" y2="30.48" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U6" gate="G$1" pin="DN"/>
-<wire x1="81.28" y1="35.56" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="LCD_BIASN_UP" class="0">
 <segment>
 <pinref part="U7" gate="G$1" pin="PA7"/>
 <wire x1="236.22" y1="27.94" x2="238.76" y2="27.94" width="0.1524" layer="91"/>
 </segment>
+</net>
+<net name="LCD_BIASN_DN" class="0">
+<segment>
+<pinref part="U6" gate="G$1" pin="DN"/>
+<wire x1="81.28" y1="35.56" x2="73.66" y2="35.56" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U7" gate="G$1" pin="PA5"/>
+<wire x1="236.22" y1="33.02" x2="238.76" y2="33.02" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LCD_BIASN_UP" class="0">
 <segment>
 <pinref part="U6" gate="G$1" pin="UP"/>
 <wire x1="81.28" y1="33.02" x2="73.66" y2="33.02" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U7" gate="G$1" pin="PA6"/>
+<wire x1="236.22" y1="30.48" x2="238.76" y2="30.48" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="LCD_BIASP_SHDN_" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="PA1"/>
-<wire x1="200.66" y1="33.02" x2="198.12" y2="33.02" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="SHDN_"/>
 <wire x1="81.28" y1="111.76" x2="73.66" y2="111.76" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="LCD_BIASP_DN" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="PA2"/>
-<wire x1="200.66" y1="30.48" x2="198.12" y2="30.48" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U5" gate="G$1" pin="DN"/>
-<wire x1="81.28" y1="109.22" x2="73.66" y2="109.22" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="LCD_BIASP_UP" class="0">
 <segment>
 <pinref part="U7" gate="G$1" pin="PA3"/>
 <wire x1="200.66" y1="27.94" x2="198.12" y2="27.94" width="0.1524" layer="91"/>
 </segment>
+</net>
+<net name="LCD_BIASP_DN" class="0">
+<segment>
+<pinref part="U5" gate="G$1" pin="DN"/>
+<wire x1="81.28" y1="109.22" x2="73.66" y2="109.22" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U7" gate="G$1" pin="PA2"/>
+<wire x1="200.66" y1="30.48" x2="198.12" y2="30.48" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="LCD_BIASP_UP" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="UP"/>
 <wire x1="81.28" y1="106.68" x2="73.66" y2="106.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U7" gate="G$1" pin="PA1"/>
+<wire x1="200.66" y1="33.02" x2="198.12" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
@@ -28905,7 +28891,7 @@ w/2A current</text>
 <junction x="124.46" y="119.38"/>
 </segment>
 </net>
-<net name="N$17" class="0">
+<net name="LCD_BIAS_P_P1" class="2">
 <segment>
 <pinref part="L2" gate="G$1" pin="2"/>
 <pinref part="U5" gate="G$1" pin="LX"/>
@@ -28949,7 +28935,7 @@ w/2A current</text>
 <junction x="137.16" y="109.22"/>
 </segment>
 </net>
-<net name="N$27" class="0">
+<net name="LCD_BIAS_P_P2" class="2">
 <segment>
 <wire x1="160.02" y1="137.16" x2="160.02" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="R13" gate="G$1" pin="1"/>
@@ -29023,7 +29009,7 @@ w/2A current</text>
 <junction x="116.84" y="45.72"/>
 </segment>
 </net>
-<net name="N$24" class="0">
+<net name="LCD_BIAS_N_P1" class="2">
 <segment>
 <pinref part="L5" gate="G$1" pin="2"/>
 <pinref part="U6" gate="G$1" pin="LX"/>
@@ -29084,7 +29070,7 @@ w/2A current</text>
 <junction x="76.2" y="30.48"/>
 </segment>
 </net>
-<net name="N$51" class="0">
+<net name="LCD_BIAS_N_P2" class="2">
 <segment>
 <pinref part="C30" gate="C" pin="2"/>
 <pinref part="D9" gate="G$1" pin="K"/>
